@@ -21,7 +21,7 @@ export default function TruckView(props:Props){
   setError(false);setLoading(true);setLoadProgress(0);
   try{renderer=new T.WebGLRenderer({antialias:true,alpha:true});}catch{setError(true);return;}
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFShadowMap;renderer.setClearColor('#e8ebeb',0);renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
-  el.appendChild(renderer.domElement);renderer.domElement.setAttribute('aria-label','Camión y componentes 3D detallados. Un dedo mueve el camión; dos dedos giran y pellizcan para acercar. Usa la lista para seleccionar piezas con teclado.');
+  el.appendChild(renderer.domElement);renderer.domElement.setAttribute('aria-label','Camión y componentes 3D detallados. Un dedo gira el camión; dos dedos mueven y pellizcan para acercar. Usa la lista para seleccionar piezas con teclado.');
   const scene=new T.Scene(),camera=new T.PerspectiveCamera(36,1,.005,200);
   const studio=new RoomEnvironment(),pmrem=new T.PMREMGenerator(renderer),environment=pmrem.fromScene(studio,.035);scene.environment=environment.texture;scene.environmentIntensity=.9;studio.dispose();pmrem.dispose();
   const controls=new OrbitControls(camera,renderer.domElement);configureTouchControls(controls);controls.enableZoom=true;controls.zoomToCursor=false;controls.zoomSpeed=.6;controls.rotateSpeed=.32;controls.minDistance=.015;controls.maxDistance=65;controls.maxPolarAngle=Math.PI*.95;
