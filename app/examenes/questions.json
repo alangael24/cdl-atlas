@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "general-1",
+    "category": "general",
+    "section": "2.2.4",
+    "prompt": {
+      "es": "Al retroceder pierdes de vista a tu ayudante. ¿Qué haces?",
+      "en": "You lose sight of your helper while backing. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Detenerme",
+        "en": "Stop"
+      },
+      {
+        "es": "Seguir lentamente",
+        "en": "Keep moving slowly"
+      },
+      {
+        "es": "Guiarme solo por su voz",
+        "en": "Rely only on their voice"
+      }
+    ],
+    "correct": 0,
+    "why": "Detente hasta recuperar el contacto visual y confirmar que el camino está libre."
+  },
+  {
+    "id": "general-2",
+    "category": "general",
+    "section": "2.4.1",
+    "prompt": {
+      "es": "¿Por qué conviene mirar lejos hacia adelante?",
+      "en": "Why should you look far ahead?"
+    },
+    "options": [
+      {
+        "es": "Para anticipar peligros",
+        "en": "To anticipate hazards"
+      },
+      {
+        "es": "Para dejar de usar los espejos",
+        "en": "To stop using mirrors"
+      },
+      {
+        "es": "Para poder seguir más cerca",
+        "en": "To follow more closely"
+      }
+    ],
+    "correct": 0,
+    "why": "Detectar cambios con tiempo permite maniobrar y reducir velocidad gradualmente."
+  },
+  {
+    "id": "general-3",
+    "category": "general",
+    "section": "2.6.2",
+    "prompt": {
+      "es": "Llueve y la carretera está resbalosa. ¿Qué cambias?",
+      "en": "Rain makes the road slippery. What should you change?"
+    },
+    "options": [
+      {
+        "es": "Menos velocidad y más espacio",
+        "en": "Lower speed and more space"
+      },
+      {
+        "es": "Más velocidad",
+        "en": "Higher speed"
+      },
+      {
+        "es": "Menos distancia de seguimiento",
+        "en": "Less following distance"
+      }
+    ],
+    "correct": 0,
+    "why": "Con menos adherencia necesitas más margen para detenerte y conservar el control."
+  },
+  {
+    "id": "general-4",
+    "category": "general",
+    "section": "2.16",
+    "prompt": {
+      "es": "¿Cuándo eliges una marcha baja para una bajada pronunciada?",
+      "en": "When should you select a low gear for a steep downgrade?"
+    },
+    "options": [
+      {
+        "es": "Antes de iniciar la bajada",
+        "en": "Before starting down"
+      },
+      {
+        "es": "Cuando los frenos ya estén calientes",
+        "en": "When the brakes are already hot"
+      },
+      {
+        "es": "Solo al terminar la bajada",
+        "en": "Only at the bottom"
+      }
+    ],
+    "correct": 0,
+    "why": "Preparar la marcha antes de bajar permite aprovechar el frenado del motor."
+  },
+  {
+    "id": "general-5",
+    "category": "general",
+    "section": "2.11",
+    "prompt": {
+      "es": "Sientes sueño al conducir. ¿Qué solución atiende la causa?",
+      "en": "You feel sleepy while driving. What addresses the cause?"
+    },
+    "options": [
+      {
+        "es": "Detenerme en un lugar seguro y descansar",
+        "en": "Stop in a safe place and rest"
+      },
+      {
+        "es": "Subir la música",
+        "en": "Turn up the music"
+      },
+      {
+        "es": "Abrir la ventana",
+        "en": "Open the window"
+      }
+    ],
+    "correct": 0,
+    "why": "La música y el aire no sustituyen el sueño. La fatiga requiere descanso."
+  },
+  {
+    "id": "general-6",
+    "category": "general",
+    "section": "2.6.3",
+    "prompt": {
+      "es": "En una curva, ¿cuándo reduces la velocidad?",
+      "en": "When should you slow down for a curve?"
+    },
+    "options": [
+      {
+        "es": "Antes de entrar",
+        "en": "Before entering"
+      },
+      {
+        "es": "Solo cuando ya derrape",
+        "en": "Only after skidding"
+      },
+      {
+        "es": "Después de salir",
+        "en": "After leaving"
+      }
+    ],
+    "correct": 0,
+    "why": "Entrar demasiado rápido aumenta el riesgo de derrape o vuelco."
+  },
+  {
+    "id": "general-7",
+    "category": "general",
+    "section": "2.7",
+    "prompt": {
+      "es": "Un automóvil ocupa el espacio que dejaste delante. ¿Qué haces?",
+      "en": "A car moves into your following space. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Recuperar distancia de forma gradual",
+        "en": "Gradually rebuild the gap"
+      },
+      {
+        "es": "Acercarme para que se retire",
+        "en": "Move closer to make it leave"
+      },
+      {
+        "es": "Acelerar hasta su parachoques",
+        "en": "Accelerate toward its bumper"
+      }
+    ],
+    "correct": 0,
+    "why": "Recuperar espacio conserva tu margen de reacción y frenado."
+  },
+  {
+    "id": "general-8",
+    "category": "general",
+    "section": "2.12",
+    "prompt": {
+      "es": "Con niebla que permite continuar con precaución, ¿qué luces usas?",
+      "en": "In fog where cautious travel is possible, which lights should you use?"
+    },
+    "options": [
+      {
+        "es": "Luces bajas",
+        "en": "Low beams"
+      },
+      {
+        "es": "Luces altas",
+        "en": "High beams"
+      },
+      {
+        "es": "Ninguna luz",
+        "en": "No lights"
+      }
+    ],
+    "correct": 0,
+    "why": "Las altas se reflejan en la niebla y dificultan la visión. Usa bajas y reduce velocidad."
+  },
+  {
+    "id": "general-9",
+    "category": "general",
+    "section": "2.1.3",
+    "prompt": {
+      "es": "¿Qué puede indicar óxido que sale de una tuerca de rueda?",
+      "en": "What can rust streaks from a wheel nut indicate?"
+    },
+    "options": [
+      {
+        "es": "Que la tuerca esté floja",
+        "en": "A loose nut"
+      },
+      {
+        "es": "Que esté bien apretada",
+        "en": "A properly tightened nut"
+      },
+      {
+        "es": "Que el neumático esté nuevo",
+        "en": "A new tire"
+      }
+    ],
+    "correct": 0,
+    "why": "El movimiento de una fijación floja puede producir rastros de óxido; hay que revisarla."
+  },
+  {
+    "id": "general-10",
+    "category": "general",
+    "section": "2.18",
+    "prompt": {
+      "es": "¿Qué hace principalmente el ABS?",
+      "en": "What is the main purpose of ABS?"
+    },
+    "options": [
+      {
+        "es": "Ayudar a evitar el bloqueo de ruedas",
+        "en": "Help prevent wheel lockup"
+      },
+      {
+        "es": "Garantizar una parada más corta siempre",
+        "en": "Guarantee a shorter stop every time"
+      },
+      {
+        "es": "Eliminar la necesidad de distancia",
+        "en": "Eliminate the need for following distance"
+      }
+    ],
+    "correct": 0,
+    "why": "El ABS ayuda a conservar control durante el frenado; no elimina los límites de adherencia."
+  },
+  {
+    "id": "air-1",
+    "category": "air",
+    "section": "5.1.1",
+    "prompt": {
+      "es": "¿Qué componente llena los depósitos de aire?",
+      "en": "Which component fills the air reservoirs?"
+    },
+    "options": [
+      {
+        "es": "El compresor",
+        "en": "The compressor"
+      },
+      {
+        "es": "El alternador",
+        "en": "The alternator"
+      },
+      {
+        "es": "El radiador",
+        "en": "The radiator"
+      }
+    ],
+    "correct": 0,
+    "why": "El compresor produce el aire comprimido que utiliza el sistema de frenos."
+  },
+  {
+    "id": "air-2",
+    "category": "air",
+    "section": "5.1.2",
+    "prompt": {
+      "es": "¿Qué controla el gobernador?",
+      "en": "What does the governor control?"
+    },
+    "options": [
+      {
+        "es": "Cuándo el compresor bombea aire",
+        "en": "When the compressor pumps air"
+      },
+      {
+        "es": "El giro del volante",
+        "en": "Steering wheel movement"
+      },
+      {
+        "es": "El nivel de combustible",
+        "en": "Fuel level"
+      }
+    ],
+    "correct": 0,
+    "why": "El gobernador responde a la presión de los depósitos para controlar la carga del compresor."
+  },
+  {
+    "id": "air-3",
+    "category": "air",
+    "section": "5.1.4",
+    "prompt": {
+      "es": "¿Por qué se drenan los depósitos de aire?",
+      "en": "Why are air tanks drained?"
+    },
+    "options": [
+      {
+        "es": "Para retirar agua y aceite acumulados",
+        "en": "To remove accumulated water and oil"
+      },
+      {
+        "es": "Para desgastar las pastillas",
+        "en": "To wear down brake pads"
+      },
+      {
+        "es": "Para llenar el radiador",
+        "en": "To fill the radiator"
+      }
+    ],
+    "correct": 0,
+    "why": "El agua puede congelarse y afectar el frenado; agua y aceite se acumulan en los depósitos."
+  },
+  {
+    "id": "air-4",
+    "category": "air",
+    "section": "5.1.9",
+    "prompt": {
+      "es": "¿Qué indican los manómetros de suministro?",
+      "en": "What do supply pressure gauges show?"
+    },
+    "options": [
+      {
+        "es": "Presión en los depósitos",
+        "en": "Pressure in the reservoirs"
+      },
+      {
+        "es": "Presión de los neumáticos",
+        "en": "Tire pressure"
+      },
+      {
+        "es": "Temperatura del aceite",
+        "en": "Oil temperature"
+      }
+    ],
+    "correct": 0,
+    "why": "Muestran el aire disponible en los circuitos, no la presión de los neumáticos."
+  },
+  {
+    "id": "air-5",
+    "category": "air",
+    "section": "5.4.7",
+    "prompt": {
+      "es": "Se activa la advertencia de baja presión al conducir. ¿Qué haces?",
+      "en": "The low-air warning activates while driving. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Detenerme de forma segura cuanto antes",
+        "en": "Stop safely as soon as possible"
+      },
+      {
+        "es": "Continuar hasta agotar el aire",
+        "en": "Continue until the air runs out"
+      },
+      {
+        "es": "Ignorarla si el motor sigue encendido",
+        "en": "Ignore it if the engine is running"
+      }
+    ],
+    "correct": 0,
+    "why": "La reserva de aire es insuficiente. Continuar puede provocar la aplicación de frenos de resorte."
+  },
+  {
+    "id": "air-6",
+    "category": "air",
+    "section": "5.1.14",
+    "prompt": {
+      "es": "En los frenos de resorte, ¿qué mantiene comprimidos los resortes durante la marcha?",
+      "en": "What holds spring brakes released during travel?"
+    },
+    "options": [
+      {
+        "es": "La presión de aire",
+        "en": "Air pressure"
+      },
+      {
+        "es": "El combustible",
+        "en": "Fuel"
+      },
+      {
+        "es": "La luz de freno",
+        "en": "The brake light"
+      }
+    ],
+    "correct": 0,
+    "why": "La presión mantiene comprimidos los resortes; al perderse, estos pueden aplicar los frenos."
+  },
+  {
+    "id": "air-7",
+    "category": "air",
+    "section": "5.4.5",
+    "prompt": {
+      "es": "¿Por qué es peligroso exigir continuamente los frenos en una bajada?",
+      "en": "Why is continuous heavy braking on a downgrade dangerous?"
+    },
+    "options": [
+      {
+        "es": "Pueden sobrecalentarse y perder eficacia",
+        "en": "They can overheat and lose effectiveness"
+      },
+      {
+        "es": "El aire se convierte en combustible",
+        "en": "Air turns into fuel"
+      },
+      {
+        "es": "Las luces dejan de funcionar siempre",
+        "en": "The lights always stop working"
+      }
+    ],
+    "correct": 0,
+    "why": "El calor excesivo reduce el frenado. Controla la velocidad con una marcha adecuada."
+  },
+  {
+    "id": "air-8",
+    "category": "air",
+    "section": "5.1.7",
+    "prompt": {
+      "es": "¿Qué ocurre al pisar y soltar repetidamente el freno de aire?",
+      "en": "What happens when you repeatedly apply and release air brakes?"
+    },
+    "options": [
+      {
+        "es": "Se consume aire del sistema",
+        "en": "System air is consumed"
+      },
+      {
+        "es": "Se recargan los depósitos automáticamente con cada pisada",
+        "en": "Each application automatically refills the tanks"
+      },
+      {
+        "es": "Se elimina cualquier fuga",
+        "en": "All leaks disappear"
+      }
+    ],
+    "correct": 0,
+    "why": "Cada aplicación usa aire. Bombear innecesariamente puede reducir la reserva más rápido de lo que se repone."
+  },
+  {
+    "id": "air-9",
+    "category": "air",
+    "section": "5.4.2",
+    "prompt": {
+      "es": "Con ABS, ¿cómo aplicas el freno en una frenada normal?",
+      "en": "With ABS, how should you make a normal brake application?"
+    },
+    "options": [
+      {
+        "es": "Freno normalmente, sin bombear para activar el ABS",
+        "en": "Brake normally without pumping to activate ABS"
+      },
+      {
+        "es": "Bombeo siempre el pedal",
+        "en": "Always pump the pedal"
+      },
+      {
+        "es": "Uso únicamente el estacionamiento",
+        "en": "Use only the parking brake"
+      }
+    ],
+    "correct": 0,
+    "why": "El ABS regula automáticamente el bloqueo; no necesita que bombees el pedal."
+  },
+  {
+    "id": "air-10",
+    "category": "air",
+    "section": "5.1.6",
+    "prompt": {
+      "es": "La válvula de seguridad descarga aire por exceso de presión. ¿Qué significa?",
+      "en": "The safety valve releases air from excessive pressure. What does this mean?"
+    },
+    "options": [
+      {
+        "es": "Hay una falla que debe repararse",
+        "en": "A fault needs repair"
+      },
+      {
+        "es": "El sistema no necesita revisión",
+        "en": "No inspection is needed"
+      },
+      {
+        "es": "Debo bloquear la válvula",
+        "en": "I should block the valve"
+      }
+    ],
+    "correct": 0,
+    "why": "La válvula protege contra sobrepresión. Su descarga exige revisar la causa, no bloquearla."
+  },
+  {
+    "id": "combination-1",
+    "category": "combination",
+    "section": "6.1.1",
+    "prompt": {
+      "es": "¿Qué efecto tiene apilar la carga más alto?",
+      "en": "What happens when cargo is stacked higher?"
+    },
+    "options": [
+      {
+        "es": "Aumenta el riesgo de vuelco",
+        "en": "Rollover risk increases"
+      },
+      {
+        "es": "Siempre mejora la estabilidad",
+        "en": "Stability always improves"
+      },
+      {
+        "es": "Baja el centro de gravedad",
+        "en": "The center of gravity gets lower"
+      }
+    ],
+    "correct": 0,
+    "why": "Un centro de gravedad más alto facilita el vuelco, especialmente en curvas."
+  },
+  {
+    "id": "combination-2",
+    "category": "combination",
+    "section": "6.1.2",
+    "prompt": {
+      "es": "¿Qué maniobra reduce el efecto látigo del remolque?",
+      "en": "What helps reduce the trailer crack-the-whip effect?"
+    },
+    "options": [
+      {
+        "es": "Cambiar de dirección suavemente",
+        "en": "Steer smoothly"
+      },
+      {
+        "es": "Cambiar de carril bruscamente",
+        "en": "Make abrupt lane changes"
+      },
+      {
+        "es": "Girar más rápido",
+        "en": "Steer faster"
+      }
+    ],
+    "correct": 0,
+    "why": "Los movimientos bruscos se amplifican hacia la parte trasera del conjunto."
+  },
+  {
+    "id": "combination-3",
+    "category": "combination",
+    "section": "6.1.6",
+    "prompt": {
+      "es": "En una curva, ¿por dónde tienden a pasar las ruedas traseras del remolque?",
+      "en": "In a turn, where do the trailer rear wheels tend to track?"
+    },
+    "options": [
+      {
+        "es": "Por dentro de la trayectoria del frente",
+        "en": "Inside the path of the front wheels"
+      },
+      {
+        "es": "Exactamente por la misma trayectoria siempre",
+        "en": "Always along exactly the same path"
+      },
+      {
+        "es": "Solo hacia afuera",
+        "en": "Only outward"
+      }
+    ],
+    "correct": 0,
+    "why": "El remolque recorta la curva; necesitas espacio para no subir al bordillo ni golpear obstáculos."
+  },
+  {
+    "id": "combination-4",
+    "category": "combination",
+    "section": "6.2.1",
+    "prompt": {
+      "es": "¿Para qué se utiliza la válvula manual de freno del remolque?",
+      "en": "What is the trailer hand valve used for?"
+    },
+    "options": [
+      {
+        "es": "Para probar los frenos del remolque",
+        "en": "To test the trailer brakes"
+      },
+      {
+        "es": "Para estacionar permanentemente",
+        "en": "For permanent parking"
+      },
+      {
+        "es": "Para corregir cualquier derrape",
+        "en": "To correct every skid"
+      }
+    ],
+    "correct": 0,
+    "why": "Se utiliza para la prueba del remolque. No sustituye el freno de estacionamiento."
+  },
+  {
+    "id": "combination-5",
+    "category": "combination",
+    "section": "6.2.2",
+    "prompt": {
+      "es": "¿Qué protege la válvula de protección del tractor?",
+      "en": "What does the tractor protection valve protect?"
+    },
+    "options": [
+      {
+        "es": "La reserva de aire del tractor",
+        "en": "The tractor air supply"
+      },
+      {
+        "es": "El nivel de DEF",
+        "en": "The DEF level"
+      },
+      {
+        "es": "El parabrisas",
+        "en": "The windshield"
+      }
+    ],
+    "correct": 0,
+    "why": "Limita la pérdida de aire del tractor si el remolque se separa o presenta una fuga importante."
+  },
+  {
+    "id": "combination-6",
+    "category": "combination",
+    "section": "6.2.4",
+    "prompt": {
+      "es": "¿Qué transporta la línea de servicio al frenar?",
+      "en": "What does the service line carry during braking?"
+    },
+    "options": [
+      {
+        "es": "La señal de presión para aplicar los frenos",
+        "en": "The pressure signal to apply the brakes"
+      },
+      {
+        "es": "Combustible al remolque",
+        "en": "Fuel to the trailer"
+      },
+      {
+        "es": "Electricidad para los faros",
+        "en": "Electricity for headlights"
+      }
+    ],
+    "correct": 0,
+    "why": "Su presión controla la aplicación de los frenos del remolque."
+  },
+  {
+    "id": "combination-7",
+    "category": "combination",
+    "section": "6.2.4",
+    "prompt": {
+      "es": "¿Qué función tiene la línea de suministro o emergencia?",
+      "en": "What does the supply or emergency line do?"
+    },
+    "options": [
+      {
+        "es": "Carga los depósitos del remolque y controla sus frenos de emergencia",
+        "en": "Charges trailer tanks and controls emergency brakes"
+      },
+      {
+        "es": "Lubrica la quinta rueda",
+        "en": "Lubricates the fifth wheel"
+      },
+      {
+        "es": "Mide el peso de la carga",
+        "en": "Measures cargo weight"
+      }
+    ],
+    "correct": 0,
+    "why": "La pérdida de presión en esta línea activa el frenado de emergencia del remolque."
+  },
+  {
+    "id": "combination-8",
+    "category": "combination",
+    "section": "6.4.1",
+    "prompt": {
+      "es": "Tras acoplar, ¿debe quedar un espacio entre el delantal y la quinta rueda?",
+      "en": "After coupling, should there be a gap between the apron and fifth wheel?"
+    },
+    "options": [
+      {
+        "es": "No, deben quedar apoyados sin separación",
+        "en": "No, they must sit together without a gap"
+      },
+      {
+        "es": "Sí, cuanto más mejor",
+        "en": "Yes, the larger the better"
+      },
+      {
+        "es": "Solo importa el color de la grasa",
+        "en": "Only the grease color matters"
+      }
+    ],
+    "correct": 0,
+    "why": "Una separación puede indicar un acoplamiento incorrecto. Hay que verificar el cierre visualmente."
+  },
+  {
+    "id": "combination-9",
+    "category": "combination",
+    "section": "6.4.1",
+    "prompt": {
+      "es": "¿Alrededor de qué parte del kingpin deben cerrar las mordazas?",
+      "en": "What part of the kingpin should the locking jaws close around?"
+    },
+    "options": [
+      {
+        "es": "El vástago",
+        "en": "The shank"
+      },
+      {
+        "es": "La cabeza inferior",
+        "en": "The bottom head"
+      },
+      {
+        "es": "La manguera de aire",
+        "en": "The air hose"
+      }
+    ],
+    "correct": 0,
+    "why": "El cierre correcto retiene el vástago; cerrar bajo la cabeza no asegura el acoplamiento."
+  },
+  {
+    "id": "combination-10",
+    "category": "combination",
+    "section": "6.1.7",
+    "prompt": {
+      "es": "Al retroceder y perder la trayectoria deseada, ¿qué ayuda?",
+      "en": "When backing off your intended path, what helps?"
+    },
+    "options": [
+      {
+        "es": "Avanzar y corregir la posición",
+        "en": "Pull forward and realign"
+      },
+      {
+        "es": "Seguir forzando el giro",
+        "en": "Keep forcing the turn"
+      },
+      {
+        "es": "Ignorar los espejos",
+        "en": "Ignore the mirrors"
+      }
+    ],
+    "correct": 0,
+    "why": "Avanzar para corregir evita acumular una articulación difícil de recuperar."
+  },
+  {
+    "id": "doubles-1",
+    "category": "doubles",
+    "section": "7.1.2",
+    "prompt": {
+      "es": "¿Qué remolque es más vulnerable al efecto látigo?",
+      "en": "Which trailer is most vulnerable to the crack-the-whip effect?"
+    },
+    "options": [
+      {
+        "es": "El último",
+        "en": "The last trailer"
+      },
+      {
+        "es": "Siempre el primero",
+        "en": "Always the first trailer"
+      },
+      {
+        "es": "Ninguno",
+        "en": "None"
+      }
+    ],
+    "correct": 0,
+    "why": "La amplificación del movimiento aumenta hacia atrás, elevando el riesgo de vuelco del último remolque."
+  },
+  {
+    "id": "doubles-2",
+    "category": "doubles",
+    "section": "7.2.1",
+    "prompt": {
+      "es": "Con dos remolques de carga desigual, ¿dónde va normalmente el más pesado?",
+      "en": "With two unequally loaded trailers, where should the heavier one normally go?"
+    },
+    "options": [
+      {
+        "es": "Primero, detrás del tractor",
+        "en": "First, behind the tractor"
+      },
+      {
+        "es": "Siempre al final",
+        "en": "Always last"
+      },
+      {
+        "es": "Da igual",
+        "en": "It does not matter"
+      }
+    ],
+    "correct": 0,
+    "why": "Colocar la mayor carga delante favorece un manejo más estable del conjunto."
+  },
+  {
+    "id": "doubles-3",
+    "category": "doubles",
+    "section": "7.1.5",
+    "prompt": {
+      "es": "¿Qué necesitas al incorporarte con dobles o triples?",
+      "en": "What do you need when entering traffic with doubles or triples?"
+    },
+    "options": [
+      {
+        "es": "Un espacio mayor en el tráfico",
+        "en": "A larger traffic gap"
+      },
+      {
+        "es": "Menos espacio que un automóvil",
+        "en": "Less space than a car"
+      },
+      {
+        "es": "Acelerar sin mirar",
+        "en": "Accelerate without looking"
+      }
+    ],
+    "correct": 0,
+    "why": "La longitud y la respuesta del conjunto requieren más espacio para incorporarse y maniobrar."
+  },
+  {
+    "id": "doubles-4",
+    "category": "doubles",
+    "section": "7.1.3",
+    "prompt": {
+      "es": "¿Cuántos acoplamientos deben revisarse?",
+      "en": "How many couplings must be inspected?"
+    },
+    "options": [
+      {
+        "es": "Todos",
+        "en": "All of them"
+      },
+      {
+        "es": "Solo el primero",
+        "en": "Only the first"
+      },
+      {
+        "es": "Solo el que parezca viejo",
+        "en": "Only the one that looks old"
+      }
+    ],
+    "correct": 0,
+    "why": "Cada unión agrega componentes críticos; omitir una deja sin comprobar parte del conjunto."
+  },
+  {
+    "id": "doubles-5",
+    "category": "doubles",
+    "section": "7.1.7",
+    "prompt": {
+      "es": "¿Qué lugar de estacionamiento conviene elegir?",
+      "en": "What parking location should you choose?"
+    },
+    "options": [
+      {
+        "es": "Uno del que pueda salir hacia adelante",
+        "en": "One I can pull forward out of"
+      },
+      {
+        "es": "Un callejón sin salida",
+        "en": "A dead-end alley"
+      },
+      {
+        "es": "El espacio más estrecho",
+        "en": "The tightest space"
+      }
+    ],
+    "correct": 0,
+    "why": "Planear una salida hacia adelante evita un retroceso largo y difícil con varios remolques."
+  },
+  {
+    "id": "doubles-6",
+    "category": "doubles",
+    "section": "7.2.1",
+    "prompt": {
+      "es": "¿Qué permite el dolly convertidor?",
+      "en": "What does a converter dolly allow?"
+    },
+    "options": [
+      {
+        "es": "Acoplar otro semirremolque",
+        "en": "Coupling another semitrailer"
+      },
+      {
+        "es": "Controlar por sí solo la dirección del tractor",
+        "en": "Steering the tractor by itself"
+      },
+      {
+        "es": "Sustituir el sistema de aire del tractor",
+        "en": "Replacing the tractor air system"
+      }
+    ],
+    "correct": 0,
+    "why": "El dolly incorpora ejes y quinta rueda para conectar el siguiente semirremolque."
+  },
+  {
+    "id": "tank-1",
+    "category": "tank",
+    "section": "8.2.2",
+    "prompt": {
+      "es": "¿Qué es el surge de un líquido?",
+      "en": "What is liquid surge?"
+    },
+    "options": [
+      {
+        "es": "Movimiento de la carga líquida",
+        "en": "Movement of the liquid cargo"
+      },
+      {
+        "es": "Solo una fuga externa del tanque",
+        "en": "Only an external tank leak"
+      },
+      {
+        "es": "La expansión de los neumáticos",
+        "en": "Tire expansion"
+      }
+    ],
+    "correct": 0,
+    "why": "El líquido se desplaza dentro del tanque y puede empujar el vehículo al frenar o acelerar."
+  },
+  {
+    "id": "tank-2",
+    "category": "tank",
+    "section": "8.2.6",
+    "prompt": {
+      "es": "¿Para qué se deja espacio libre u outage en una cisterna?",
+      "en": "Why is outage left in a tank?"
+    },
+    "options": [
+      {
+        "es": "Para permitir la expansión del líquido",
+        "en": "To allow liquid expansion"
+      },
+      {
+        "es": "Para eliminar por completo el oleaje",
+        "en": "To eliminate all liquid surge"
+      },
+      {
+        "es": "Para poder ignorar el peso del producto",
+        "en": "To ignore the product weight"
+      }
+    ],
+    "correct": 0,
+    "why": "Los líquidos se expanden al calentarse; el espacio requerido depende del producto."
+  },
+  {
+    "id": "tank-3",
+    "category": "tank",
+    "section": "8.2.4",
+    "prompt": {
+      "es": "¿Qué movimiento reducen principalmente los rompeolas o baffles?",
+      "en": "What movement do baffles mainly reduce?"
+    },
+    "options": [
+      {
+        "es": "El desplazamiento hacia adelante y atrás",
+        "en": "Forward and backward surge"
+      },
+      {
+        "es": "Toda inclinación lateral",
+        "en": "All sideways motion"
+      },
+      {
+        "es": "El giro de los neumáticos",
+        "en": "Tire rotation"
+      }
+    ],
+    "correct": 0,
+    "why": "Los rompeolas moderan el movimiento longitudinal, pero no eliminan el oleaje lateral."
+  },
+  {
+    "id": "tank-4",
+    "category": "tank",
+    "section": "8.2.1",
+    "prompt": {
+      "es": "¿Por qué una cisterna exige especial cuidado en curvas?",
+      "en": "Why does a tanker need extra care on curves?"
+    },
+    "options": [
+      {
+        "es": "Por su centro de gravedad alto",
+        "en": "Because of its high center of gravity"
+      },
+      {
+        "es": "Porque nunca puede volcar",
+        "en": "Because it can never roll over"
+      },
+      {
+        "es": "Porque no transporta peso",
+        "en": "Because it carries no weight"
+      }
+    ],
+    "correct": 0,
+    "why": "El peso elevado y el movimiento del líquido aumentan el riesgo de vuelco."
+  },
+  {
+    "id": "tank-5",
+    "category": "tank",
+    "section": "8.2.5",
+    "prompt": {
+      "es": "En un tanque sin rompeolas, ¿cómo debes iniciar y detener la marcha?",
+      "en": "How should you start and stop a smooth-bore tanker?"
+    },
+    "options": [
+      {
+        "es": "Con mucha suavidad",
+        "en": "Very smoothly"
+      },
+      {
+        "es": "Con sacudidas fuertes",
+        "en": "With strong jolts"
+      },
+      {
+        "es": "Como si no hubiera líquido",
+        "en": "As if there were no liquid"
+      }
+    ],
+    "correct": 0,
+    "why": "Sin barreras internas, el líquido tiene mayor libertad de movimiento longitudinal."
+  },
+  {
+    "id": "tank-6",
+    "category": "tank",
+    "section": "8.2.7",
+    "prompt": {
+      "es": "¿Qué determina cuánto líquido puedes cargar?",
+      "en": "What determines how much liquid you can load?"
+    },
+    "options": [
+      {
+        "es": "Su peso, expansión y límites de peso",
+        "en": "Its weight, expansion and weight limits"
+      },
+      {
+        "es": "Solo el volumen máximo del tanque",
+        "en": "Only the maximum tank volume"
+      },
+      {
+        "es": "Llenar siempre hasta el borde",
+        "en": "Always filling to the brim"
+      }
+    ],
+    "correct": 0,
+    "why": "El volumen disponible no basta: la densidad y la expansión también limitan la carga."
+  },
+  {
+    "id": "hazmat-1",
+    "category": "hazmat",
+    "section": "9.2.1",
+    "prompt": {
+      "es": "¿Quién prepara la clasificación y los documentos del material para el envío?",
+      "en": "Who prepares the material classification and shipping papers?"
+    },
+    "options": [
+      {
+        "es": "El expedidor",
+        "en": "The shipper"
+      },
+      {
+        "es": "Un pasajero",
+        "en": "A passenger"
+      },
+      {
+        "es": "El conductor del vehículo de atrás",
+        "en": "The driver behind you"
+      }
+    ],
+    "correct": 0,
+    "why": "El expedidor prepara el envío; el conductor también debe comprobar que la documentación requerida esté presente."
+  },
+  {
+    "id": "hazmat-2",
+    "category": "hazmat",
+    "section": "9.3.2",
+    "prompt": {
+      "es": "¿Qué comunican las etiquetas de peligro?",
+      "en": "What do hazard labels communicate?"
+    },
+    "options": [
+      {
+        "es": "El tipo de peligro del material",
+        "en": "The type of material hazard"
+      },
+      {
+        "es": "Que cualquier carga puede mezclarse con ella",
+        "en": "That any cargo can be mixed with it"
+      },
+      {
+        "es": "Que el contenido es inofensivo si está cerrado",
+        "en": "That the contents are harmless if sealed"
+      }
+    ],
+    "correct": 0,
+    "why": "Permiten reconocer riesgos del contenido; no son decoración ni instrucciones de velocidad."
+  },
+  {
+    "id": "hazmat-3",
+    "category": "hazmat",
+    "section": "9.6.10",
+    "prompt": {
+      "es": "Mientras conduces, ¿dónde deben estar los documentos de materiales peligrosos?",
+      "en": "While driving, where must hazardous materials shipping papers be kept?"
+    },
+    "options": [
+      {
+        "es": "Al alcance con cinturón puesto o en el bolsillo de la puerta del conductor",
+        "en": "Within reach while belted or in the driver door pouch"
+      },
+      {
+        "es": "Dentro de la carga cerrada",
+        "en": "Inside the locked cargo"
+      },
+      {
+        "es": "En casa",
+        "en": "At home"
+      }
+    ],
+    "correct": 0,
+    "why": "Deben poder localizarse rápidamente en una emergencia, junto con la información de respuesta."
+  },
+  {
+    "id": "hazmat-4",
+    "category": "hazmat",
+    "section": "9.6.10",
+    "prompt": {
+      "es": "Al salir de la cabina, ¿dónde dejas esos documentos?",
+      "en": "When leaving the cab, where should you leave those papers?"
+    },
+    "options": [
+      {
+        "es": "En el asiento del conductor o bolsillo de su puerta",
+        "en": "On the driver seat or in the driver door pouch"
+      },
+      {
+        "es": "Ocultos bajo la cama",
+        "en": "Hidden under the bunk"
+      },
+      {
+        "es": "En el bolsillo de mi pantalón",
+        "en": "In my pants pocket"
+      }
+    ],
+    "correct": 0,
+    "why": "Esas ubicaciones permiten que el personal de emergencia los encuentre si no estás en la cabina."
+  },
+  {
+    "id": "hazmat-5",
+    "category": "hazmat",
+    "section": "9.6.10",
+    "prompt": {
+      "es": "Llega una carga peligrosa sin documentos correctamente preparados. ¿La aceptas?",
+      "en": "A hazardous shipment arrives without properly prepared papers. Should you accept it?"
+    },
+    "options": [
+      {
+        "es": "No, deben corregirse antes",
+        "en": "No, they must be corrected first"
+      },
+      {
+        "es": "Sí, si el viaje es corto",
+        "en": "Yes, if the trip is short"
+      },
+      {
+        "es": "Sí, si nadie pregunta",
+        "en": "Yes, if nobody asks"
+      }
+    ],
+    "correct": 0,
+    "why": "La documentación identifica el material y sus riesgos; una promesa verbal no la sustituye."
+  },
+  {
+    "id": "hazmat-6",
+    "category": "hazmat",
+    "section": "9.7.2",
+    "prompt": {
+      "es": "Ante un incidente con posible derrame, ¿cuál es una prioridad?",
+      "en": "At an incident with a possible spill, what is a priority?"
+    },
+    "options": [
+      {
+        "es": "Mantener a las personas alejadas y avisar a emergencias",
+        "en": "Keep people away and notify emergency responders"
+      },
+      {
+        "es": "Tocar el líquido para identificarlo",
+        "en": "Touch the liquid to identify it"
+      },
+      {
+        "es": "Permitir que curiosos se acerquen",
+        "en": "Let bystanders approach"
+      }
+    ],
+    "correct": 0,
+    "why": "Evita exponer a más personas y comunica el peligro. No identifiques sustancias tocándolas."
+  },
+  {
+    "id": "passenger-1",
+    "category": "passenger",
+    "section": "4.2",
+    "prompt": {
+      "es": "¿Dónde debe quedar el equipaje de mano?",
+      "en": "Where should carry-on baggage be kept?"
+    },
+    "options": [
+      {
+        "es": "Asegurado sin bloquear salidas ni pasillos",
+        "en": "Secured without blocking exits or aisles"
+      },
+      {
+        "es": "En medio del pasillo",
+        "en": "In the middle of the aisle"
+      },
+      {
+        "es": "Frente a la puerta",
+        "en": "In front of the door"
+      }
+    ],
+    "correct": 0,
+    "why": "Un pasillo libre evita tropiezos y permite evacuar; el equipaje también debe quedar sujeto."
+  },
+  {
+    "id": "passenger-2",
+    "category": "passenger",
+    "section": "4.2.3",
+    "prompt": {
+      "es": "¿Dónde deben permanecer quienes viajan de pie en un autobús que lo permite?",
+      "en": "Where must standees remain on a bus that permits standing?"
+    },
+    "options": [
+      {
+        "es": "Detrás de la línea límite",
+        "en": "Behind the standee line"
+      },
+      {
+        "es": "Delante de la línea si el viaje es corto",
+        "en": "Ahead of the line on short trips"
+      },
+      {
+        "es": "En cualquier lugar mientras se sujeten",
+        "en": "Anywhere as long as they hold on"
+      }
+    ],
+    "correct": 0,
+    "why": "La línea mantiene libre el área del conductor y evita interferencias con la conducción."
+  },
+  {
+    "id": "passenger-3",
+    "category": "passenger",
+    "section": "4.1",
+    "prompt": {
+      "es": "¿Qué debes comprobar en las salidas de emergencia?",
+      "en": "What should you check about emergency exits?"
+    },
+    "options": [
+      {
+        "es": "Que funcionen y estén libres",
+        "en": "That they work and are unobstructed"
+      },
+      {
+        "es": "Solo que tengan una etiqueta visible",
+        "en": "Only that they have a visible label"
+      },
+      {
+        "es": "Que permanezcan bloqueadas para evitar su uso",
+        "en": "That they remain blocked to prevent use"
+      }
+    ],
+    "correct": 0,
+    "why": "Una salida inútil o bloqueada puede impedir la evacuación cuando sea necesaria."
+  },
+  {
+    "id": "passenger-4",
+    "category": "passenger",
+    "section": "4.3.5",
+    "prompt": {
+      "es": "Después de pasar un tren, ¿qué verificas antes de cruzar?",
+      "en": "After a train passes, what must you check before crossing?"
+    },
+    "options": [
+      {
+        "es": "Que no venga otro por otra vía",
+        "en": "That another train is not coming on another track"
+      },
+      {
+        "es": "Solo que el último vagón ya pasó",
+        "en": "Only that the last car has passed"
+      },
+      {
+        "es": "Solo que el vehículo de adelante avance",
+        "en": "Only that the vehicle ahead moves"
+      }
+    ],
+    "correct": 0,
+    "why": "El primer tren puede ocultar otro. Mira y escucha antes de continuar."
+  },
+  {
+    "id": "passenger-5",
+    "category": "passenger",
+    "section": "4.2.4",
+    "prompt": {
+      "es": "Al llegar a una parada, ¿qué información ayuda a los pasajeros?",
+      "en": "At a stop, what information helps passengers?"
+    },
+    "options": [
+      {
+        "es": "Ubicación y próxima hora de salida",
+        "en": "Location and next departure time"
+      },
+      {
+        "es": "Solo anunciar que ya llegamos",
+        "en": "Only announce that we have arrived"
+      },
+      {
+        "es": "No anunciar nada si es una parada habitual",
+        "en": "Make no announcement at a familiar stop"
+      }
+    ],
+    "correct": 0,
+    "why": "Anunciar la parada y la salida ayuda a evitar confusiones y pasajeros que se queden atrás."
+  },
+  {
+    "id": "passenger-6",
+    "category": "passenger",
+    "section": "4.3",
+    "prompt": {
+      "es": "¿Cómo deben ser las maniobras con pasajeros?",
+      "en": "How should you maneuver with passengers?"
+    },
+    "options": [
+      {
+        "es": "Suaves y anticipadas",
+        "en": "Smooth and planned ahead"
+      },
+      {
+        "es": "Bruscas para ahorrar tiempo",
+        "en": "Abrupt to save time"
+      },
+      {
+        "es": "Sin considerar a quienes van de pie",
+        "en": "Without considering standees"
+      }
+    ],
+    "correct": 0,
+    "why": "Las aceleraciones, frenadas y curvas bruscas pueden provocar caídas y lesiones."
+  },
+  {
+    "id": "school-1",
+    "category": "school",
+    "section": "10.1.2",
+    "prompt": {
+      "es": "¿Cuándo revisas el ajuste de los espejos del autobús escolar?",
+      "en": "When should you check school bus mirror adjustment?"
+    },
+    "options": [
+      {
+        "es": "Antes de operar el autobús",
+        "en": "Before operating the bus"
+      },
+      {
+        "es": "Solo después de un choque",
+        "en": "Only after a crash"
+      },
+      {
+        "es": "Solo cuando un niño lo pida",
+        "en": "Only when a child asks"
+      }
+    ],
+    "correct": 0,
+    "why": "El ajuste correcto permite observar estudiantes y zonas de peligro alrededor del autobús."
+  },
+  {
+    "id": "school-2",
+    "category": "school",
+    "section": "10.1.4",
+    "prompt": {
+      "es": "¿Qué limitación tienen los espejos convexos?",
+      "en": "What limitation do convex mirrors have?"
+    },
+    "options": [
+      {
+        "es": "Alteran la percepción de tamaño y distancia",
+        "en": "They distort apparent size and distance"
+      },
+      {
+        "es": "No muestran los laterales",
+        "en": "They cannot show the sides"
+      },
+      {
+        "es": "Muestran distancias exactas siempre",
+        "en": "They always show exact distances"
+      }
+    ],
+    "correct": 0,
+    "why": "Amplían el campo visual, pero no debes interpretar el tamaño y la distancia como en un espejo plano."
+  },
+  {
+    "id": "school-3",
+    "category": "school",
+    "section": "10.2",
+    "prompt": {
+      "es": "Al terminar de descargar estudiantes, no ubicas a uno. ¿Qué haces?",
+      "en": "After unloading students, you cannot account for one. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Mantener el autobús detenido y localizarlo con el procedimiento seguro",
+        "en": "Keep the bus stopped and locate the student using the safe procedure"
+      },
+      {
+        "es": "Avanzar para verlo mejor",
+        "en": "Move forward to see better"
+      },
+      {
+        "es": "Suponer que ya se fue",
+        "en": "Assume the student left"
+      }
+    ],
+    "correct": 0,
+    "why": "No muevas el autobús hasta confirmar que todos estén en un lugar seguro."
+  },
+  {
+    "id": "school-4",
+    "category": "school",
+    "section": "10.2",
+    "prompt": {
+      "es": "Un estudiante deja caer algo junto al autobús. ¿Qué debe hacer?",
+      "en": "A student drops something near the bus. What should they do?"
+    },
+    "options": [
+      {
+        "es": "Avisar al conductor antes de intentar recogerlo",
+        "en": "Tell the driver before trying to retrieve it"
+      },
+      {
+        "es": "Agacharse debajo del autobús",
+        "en": "Crawl under the bus"
+      },
+      {
+        "es": "Recogerlo sin avisar",
+        "en": "Pick it up without telling anyone"
+      }
+    ],
+    "correct": 0,
+    "why": "Al agacharse puede desaparecer de la vista del conductor y entrar en una zona de peligro."
+  },
+  {
+    "id": "school-5",
+    "category": "school",
+    "section": "10.3.1",
+    "prompt": {
+      "es": "¿Qué guía la decisión de evacuar un autobús escolar?",
+      "en": "What guides the decision to evacuate a school bus?"
+    },
+    "options": [
+      {
+        "es": "Comparar el peligro de quedarse con el de salir",
+        "en": "Compare the danger of staying with the danger of leaving"
+      },
+      {
+        "es": "Evacuar siempre por cualquier demora",
+        "en": "Always evacuate for any delay"
+      },
+      {
+        "es": "Permanecer dentro en todos los casos",
+        "en": "Stay inside in every case"
+      }
+    ],
+    "correct": 0,
+    "why": "La evacuación debe responder al riesgo real para los estudiantes, siguiendo el procedimiento de emergencia."
+  },
+  {
+    "id": "school-6",
+    "category": "school",
+    "section": "10.2.6",
+    "prompt": {
+      "es": "Al terminar la ruta, ¿qué revisión es esencial?",
+      "en": "At the end of the route, what check is essential?"
+    },
+    "options": [
+      {
+        "es": "Recorrer el interior y buscar estudiantes que hayan quedado",
+        "en": "Walk through and check for remaining students"
+      },
+      {
+        "es": "Mirar solo desde fuera",
+        "en": "Look only from outside"
+      },
+      {
+        "es": "Cerrar sin revisar",
+        "en": "Lock up without checking"
+      }
+    ],
+    "correct": 0,
+    "why": "La revisión interior permite encontrar estudiantes dormidos u olvidados y objetos que quedaron."
+  }
+]

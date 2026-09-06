@@ -1,0 +1,66 @@
+[
+  {
+    "id": "general",
+    "name": "Conocimientos generales",
+    "en": "General knowledge",
+    "section": 2,
+    "core": true,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_2.aspx"
+  },
+  {
+    "id": "air",
+    "name": "Frenos de aire",
+    "en": "Air brakes",
+    "section": 5,
+    "core": true,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_5.aspx"
+  },
+  {
+    "id": "combination",
+    "name": "Vehículos combinados",
+    "en": "Combination vehicles",
+    "section": 6,
+    "core": true,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_6.aspx"
+  },
+  {
+    "id": "doubles",
+    "name": "Dobles y triples · T",
+    "en": "Doubles and triples",
+    "section": 7,
+    "core": false,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_7.aspx"
+  },
+  {
+    "id": "tank",
+    "name": "Vehículos cisterna · N",
+    "en": "Tank vehicles",
+    "section": 8,
+    "core": false,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_8.aspx"
+  },
+  {
+    "id": "hazmat",
+    "name": "Materiales peligrosos · H",
+    "en": "Hazardous materials",
+    "section": 9,
+    "core": false,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_9.aspx"
+  },
+  {
+    "id": "passenger",
+    "name": "Pasajeros · P",
+    "en": "Passenger transport",
+    "section": 4,
+    "core": false,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_4.aspx"
+  },
+  {
+    "id": "school",
+    "name": "Autobús escolar · S",
+    "en": "School bus",
+    "section": 10,
+    "core": false,
+    "source": "https://www.oregon.gov/odot/DMV/Pages/Online_CDL_Manual_2/Section_10.aspx"
+  }
+]
