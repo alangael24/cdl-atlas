@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+**/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -45,3 +46,6 @@ next-env.d.ts
 cad/generated/
 .venv/
 __pycache__/
+.cdl-atlas-reference-v3-backup/
+.cdl-atlas-reference-v3.lock
+.venv-reference/

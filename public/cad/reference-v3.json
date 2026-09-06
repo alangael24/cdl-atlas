@@ -1,0 +1,562 @@
+{
+  "revision": "reference-v3",
+  "verifiedOemReplica": false,
+  "role": "partial-replacement-overlay",
+  "units": "metres",
+  "cadUnits": "millimetres",
+  "axisConvention": "X longitudinal, Y up, Z left",
+  "baseCommit": "45ab50fa58e32eb7c238bd6e81ae939e1cabcc9e",
+  "requiresBaseAsset": "/cad/cascadia-dd15-v2.glb",
+  "groupModes": {
+    "rim": "replace",
+    "hub": "replace",
+    "kingpin": "replace",
+    "trailerbody": "replace",
+    "engine": "append",
+    "fifth": "append"
+  },
+  "instanceLabels": {
+    "rim": [
+      "Dirección izquierdo exterior",
+      "Dirección derecho exterior",
+      "Motriz 1 izquierdo exterior",
+      "Motriz 1 izquierdo interior",
+      "Motriz 1 derecho exterior",
+      "Motriz 1 derecho interior",
+      "Motriz 2 izquierdo exterior",
+      "Motriz 2 izquierdo interior",
+      "Motriz 2 derecho exterior",
+      "Motriz 2 derecho interior",
+      "Remolque 1 izquierdo exterior",
+      "Remolque 1 izquierdo interior",
+      "Remolque 1 derecho exterior",
+      "Remolque 1 derecho interior",
+      "Remolque 2 izquierdo exterior",
+      "Remolque 2 izquierdo interior",
+      "Remolque 2 derecho exterior",
+      "Remolque 2 derecho interior"
+    ],
+    "hub": [
+      "Dirección izquierdo · cubo",
+      "Dirección derecho · cubo",
+      "Motriz 1 izquierdo · cubo",
+      "Motriz 1 derecho · cubo",
+      "Motriz 2 izquierdo · cubo",
+      "Motriz 2 derecho · cubo",
+      "Remolque 1 izquierdo · cubo",
+      "Remolque 1 derecho · cubo",
+      "Remolque 2 izquierdo · cubo",
+      "Remolque 2 derecho · cubo"
+    ],
+    "kingpin": [
+      "Perno rey · contacto nominal de 2 pulgadas"
+    ],
+    "fifth": [
+      "Cierre de quinta rueda · mordazas y palanca"
+    ],
+    "trailerbody": [
+      "Caja seca hueca · paneles, piso, postes y techo"
+    ],
+    "engine": [
+      "DD15 · enfriador EGR y juntas",
+      "DD15 · actuador y válvula EGR",
+      "DD15 · separador de ventilación del cárter",
+      "DD15 · dosificador de combustible de escape",
+      "DD15 · arnés derecho y grapas"
+    ]
+  },
+  "specifications": {
+    "wheelBeadSeatDiameterMm": 571.5,
+    "wheelBeadSeatWidthMm": 209.54999999999998,
+    "wheelBoltCircleMm": 285.75,
+    "wheelBoltHoleDiameterMm": 26.0,
+    "wheelBoltCount": 10,
+    "wheelHubBoreMm": 220.1,
+    "kingpinContactDiameterMm": 50.8,
+    "trailerShellLengthMm": 16154.4,
+    "trailerShellWidthMm": 2590.7999999999997
+  },
+  "sources": [
+    {
+      "id": "dd15-gen5-operator",
+      "publisher": "Detroit / DTNA",
+      "url": "https://dtnacontent-dtna.prd.freightliner.com/content/dam/public/dtna-servicelit/ddc/pdfs/OperatorsManual/DDPlatform/DDC-SVC-MAN-0217_2026.pdf",
+      "locator": "Section 4.03, printed pages 22-23, figures 3-4",
+      "supports": "Identity and general side/layout of DD15 Gen 5 components; no measured component geometry."
+    },
+    {
+      "id": "alcoa-88067x",
+      "publisher": "Alcoa Wheels / Howmet",
+      "url": "https://www.alcoawheels.com/north-america/en/products/88067x/",
+      "locator": "Specifications table",
+      "supports": "22.5 x 8.25 in, 10 holes, 285.75 mm PCD, 26 mm bolt holes, 220.1 mm hub bore. Dish, vents, hub and installed offset NOT verified."
+    },
+    {
+      "id": "holland-2in",
+      "publisher": "SAF-HOLLAND",
+      "url": "https://safholland.com/us/en/products/category/2-king-pins",
+      "supports": "Nominal two-inch coupling class only. Other pin/profile/jaw dimensions NOT verified."
+    },
+    {
+      "id": "cascadia-fourth-gen",
+      "publisher": "Freightliner",
+      "url": "https://www.freightliner.com/trucks/cascadia/specifications/fourth-generation/",
+      "supports": "126-inch BBC day cab and Detroit DD15 option families; no VIN-specific build."
+    },
+    {
+      "id": "great-dane-champion",
+      "publisher": "Great Dane",
+      "url": "https://greatdane.com/champion-dry-vans/",
+      "supports": "53-foot dry-van product family. Width, floor level and structural spacing in this overlay are chosen nominal/estimated parameters, not a certified Champion build."
+    }
+  ],
+  "bytes": 5899264,
+  "sha256": "023ba856d7d45f43ccb2ddb56f7e9ee63ac8f194475d1218c2378ae87236f3fd",
+  "cadSolids": 1369,
+  "instances": 36,
+  "meshes": 97,
+  "triangles": 467612,
+  "records": [
+    {
+      "group": "rim",
+      "name": "Dirección izquierdo exterior",
+      "originMm": [
+        -4030,
+        560,
+        1060
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "hub",
+      "name": "Dirección izquierdo · cubo",
+      "originMm": [
+        -4030,
+        560,
+        1060
+      ],
+      "evidence": "representative-topology",
+      "features": 16,
+      "triangles": 6116
+    },
+    {
+      "group": "rim",
+      "name": "Dirección derecho exterior",
+      "originMm": [
+        -4030,
+        560,
+        -1060
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "hub",
+      "name": "Dirección derecho · cubo",
+      "originMm": [
+        -4030,
+        560,
+        -1060
+      ],
+      "evidence": "representative-topology",
+      "features": 16,
+      "triangles": 6116
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 1 izquierdo exterior",
+      "originMm": [
+        0,
+        560,
+        1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 1 izquierdo interior",
+      "originMm": [
+        0,
+        560,
+        750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "hub",
+      "name": "Motriz 1 izquierdo · cubo",
+      "originMm": [
+        0,
+        560,
+        1090
+      ],
+      "evidence": "representative-topology",
+      "features": 13,
+      "triangles": 1714
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 1 derecho exterior",
+      "originMm": [
+        0,
+        560,
+        -1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 1 derecho interior",
+      "originMm": [
+        0,
+        560,
+        -750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "hub",
+      "name": "Motriz 1 derecho · cubo",
+      "originMm": [
+        0,
+        560,
+        -1090
+      ],
+      "evidence": "representative-topology",
+      "features": 13,
+      "triangles": 1714
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 2 izquierdo exterior",
+      "originMm": [
+        1310,
+        560,
+        1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 2 izquierdo interior",
+      "originMm": [
+        1310,
+        560,
+        750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "hub",
+      "name": "Motriz 2 izquierdo · cubo",
+      "originMm": [
+        1310,
+        560,
+        1090
+      ],
+      "evidence": "representative-topology",
+      "features": 13,
+      "triangles": 1714
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 2 derecho exterior",
+      "originMm": [
+        1310,
+        560,
+        -1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "rim",
+      "name": "Motriz 2 derecho interior",
+      "originMm": [
+        1310,
+        560,
+        -750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "hub",
+      "name": "Motriz 2 derecho · cubo",
+      "originMm": [
+        1310,
+        560,
+        -1090
+      ],
+      "evidence": "representative-topology",
+      "features": 13,
+      "triangles": 1714
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 1 izquierdo exterior",
+      "originMm": [
+        13434.4,
+        560,
+        1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 1 izquierdo interior",
+      "originMm": [
+        13434.4,
+        560,
+        750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "hub",
+      "name": "Remolque 1 izquierdo · cubo",
+      "originMm": [
+        13434.4,
+        560,
+        1090
+      ],
+      "evidence": "representative-topology",
+      "features": 16,
+      "triangles": 6116
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 1 derecho exterior",
+      "originMm": [
+        13434.4,
+        560,
+        -1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 1 derecho interior",
+      "originMm": [
+        13434.4,
+        560,
+        -750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "hub",
+      "name": "Remolque 1 derecho · cubo",
+      "originMm": [
+        13434.4,
+        560,
+        -1090
+      ],
+      "evidence": "representative-topology",
+      "features": 16,
+      "triangles": 6116
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 2 izquierdo exterior",
+      "originMm": [
+        14764.4,
+        560,
+        1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 2 izquierdo interior",
+      "originMm": [
+        14764.4,
+        560,
+        750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10408
+    },
+    {
+      "group": "hub",
+      "name": "Remolque 2 izquierdo · cubo",
+      "originMm": [
+        14764.4,
+        560,
+        1090
+      ],
+      "evidence": "representative-topology",
+      "features": 16,
+      "triangles": 6116
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 2 derecho exterior",
+      "originMm": [
+        14764.4,
+        560,
+        -1090
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "rim",
+      "name": "Remolque 2 derecho interior",
+      "originMm": [
+        14764.4,
+        560,
+        -750
+      ],
+      "evidence": "alcoa-88067x",
+      "features": 24,
+      "triangles": 10418
+    },
+    {
+      "group": "hub",
+      "name": "Remolque 2 derecho · cubo",
+      "originMm": [
+        14764.4,
+        560,
+        -1090
+      ],
+      "evidence": "representative-topology",
+      "features": 16,
+      "triangles": 6116
+    },
+    {
+      "group": "kingpin",
+      "name": "Perno rey · contacto nominal de 2 pulgadas",
+      "originMm": [
+        760,
+        1410,
+        0
+      ],
+      "evidence": "holland-2in",
+      "features": 2,
+      "triangles": 820
+    },
+    {
+      "group": "fifth",
+      "name": "Cierre de quinta rueda · mordazas y palanca",
+      "originMm": [
+        760,
+        1410,
+        0
+      ],
+      "evidence": "representative-topology",
+      "features": 9,
+      "triangles": 17130
+    },
+    {
+      "group": "trailerbody",
+      "name": "Caja seca hueca · paneles, piso, postes y techo",
+      "originMm": [
+        0,
+        0,
+        0
+      ],
+      "evidence": "nominal-envelope-and-estimated-construction",
+      "features": 651,
+      "triangles": 96372
+    },
+    {
+      "group": "engine",
+      "name": "DD15 · enfriador EGR y juntas",
+      "originMm": [
+        -3950,
+        1820,
+        -408
+      ],
+      "evidence": "dd15-gen5-operator",
+      "features": 47,
+      "triangles": 48558
+    },
+    {
+      "group": "engine",
+      "name": "DD15 · actuador y válvula EGR",
+      "originMm": [
+        -3730,
+        1654,
+        -535
+      ],
+      "evidence": "dd15-gen5-operator",
+      "features": 24,
+      "triangles": 11476
+    },
+    {
+      "group": "engine",
+      "name": "DD15 · separador de ventilación del cárter",
+      "originMm": [
+        -3900,
+        1070,
+        -492
+      ],
+      "evidence": "dd15-gen5-operator",
+      "features": 32,
+      "triangles": 14008
+    },
+    {
+      "group": "engine",
+      "name": "DD15 · dosificador de combustible de escape",
+      "originMm": [
+        -3450,
+        1450,
+        -574
+      ],
+      "evidence": "dd15-gen5-operator",
+      "features": 8,
+      "triangles": 8080
+    },
+    {
+      "group": "engine",
+      "name": "DD15 · arnés derecho y grapas",
+      "originMm": [
+        -3980,
+        1400,
+        0
+      ],
+      "evidence": "estimated-routing",
+      "features": 16,
+      "triangles": 40182
+    }
+  ],
+  "limitations": [
+    "Not a complete truck asset; requires the original v2 assembly.",
+    "Not OEM CAD, not VIN-specific, not manufacturing-ready.",
+    "Only listed wheel-interface dimensions and nominal pin contact diameter are sourced dimensions.",
+    "Engine geometry, cable routes, hubs, wheel dish/offset and trailer construction details remain estimates.",
+    "Existing cabin, hood, tires, chassis, brakes and other unmodified components remain v2 estimates.",
+    "Whole-vehicle clearances, interference, physical fastener fit and browser integration are not certified."
+  ],
+  "buildSeconds": 17.57
+}

@@ -5,7 +5,8 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
-import {buildCadGroups,disposeCadObject} from './cad-model';
+import {disposeCadObject} from './cad-model';
+import {loadReferenceRevision} from './reference-revision';
 import {frameBounds,zoomCamera} from './model-camera';
 import {parts} from './data';
 type Props={selected:string;zone:string;xray:boolean;exploded:boolean;isolated:boolean;view:string;reset:number;zoom:number;focus:number;instanceStep:number;onInstance:(label:string,index:number,count:number)=>void;onSelect:(id:string)=>void};
@@ -95,18 +96,19 @@ export default function TruckView(props:Props){
   const observer=new ResizeObserver(resize);observer.observe(el);resize();update(latest.current);
   controls.addEventListener('change',()=>{dirty=5});let frame=0;
   function animate(){frame=requestAnimationFrame(animate);controls.update();if(dirty>0){renderer.render(scene,camera);dirty--;}}animate();
-  loader.load('/cad/cascadia-dd15-v2.glb',gltf=>{
-   if(disposed){disposeCadObject(gltf.scene);draco.dispose();return;}
-   try{
-    const cad=buildCadGroups(gltf.scene);
-    for(const p of parts)if(!cad.groups[p.id]){disposeCadObject(cad.root);throw new Error(`Missing component ${p.id}`);}
-    Object.assign(groups,cad.groups);root.add(...cad.root.children);
-    ready=true;setLoading(false);resize();update(latest.current);
-   }catch(error){console.error('CAD viewer load failed',error);setLoading(false);setError(true);}
-   finally{draco.dispose();}
-  },event=>{if(!disposed&&event.lengthComputable)setLoadProgress(Math.min(99,Math.round(event.loaded/event.total*100)));},()=>{
-   if(!disposed){setLoading(false);setError(true);}draco.dispose();
-  });
+  loadReferenceRevision(loader,percent=>{
+   if(!disposed)setLoadProgress(Math.min(99,percent));
+  }).then(cad=>{
+   if(disposed){disposeCadObject(cad.root);return;}
+   for(const p of parts)if(!cad.groups[p.id]){
+    disposeCadObject(cad.root);throw new Error(`Missing component ${p.id}`);
+   }
+   Object.assign(groups,cad.groups);root.add(...cad.root.children);
+   ready=true;setLoading(false);resize();update(latest.current);
+  }).catch(error=>{
+   console.error('CAD reference revision load failed',error);
+   if(!disposed){setLoading(false);setError(true);}
+  }).finally(()=>{draco.dispose();});
   const lost=(e:Event)=>{e.preventDefault();setError(true)};renderer.domElement.addEventListener('webglcontextlost',lost);
   return()=>{disposed=true;draco.dispose();api.current=null;cancelAnimationFrame(frame);observer.disconnect();controls.dispose();renderer.domElement.removeEventListener('pointerdown',pointerDown);renderer.domElement.removeEventListener('pointerup',pointerUp);renderer.domElement.removeEventListener('pointercancel',pointerCancel);renderer.domElement.removeEventListener('webglcontextlost',lost);const mats=new Set<T.Material>(),textures=new Set<T.Texture>();scene.traverse(o=>{if(o instanceof T.Mesh){o.geometry.dispose();for(const m of Array.isArray(o.material)?o.material:[o.material])mats.add(m);}});mats.forEach(m=>{for(const value of Object.values(m))if(value instanceof T.Texture)textures.add(value);m.dispose()});textures.forEach(t=>t.dispose());environment.dispose();renderer.dispose();renderer.domElement.remove();};
  },[]);

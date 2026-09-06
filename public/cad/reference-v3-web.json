@@ -1,0 +1,10 @@
+{
+  "source": "reference-v3.glb",
+  "sourceSha256": "023ba856d7d45f43ccb2ddb56f7e9ee63ac8f194475d1218c2378ae87236f3fd",
+  "asset": "reference-v3-web.glb",
+  "sha256": "c41fa5d96d9567192aef6ed543ef966fe177eea6d43fa0236a06f95256228792",
+  "sourceTriangles": 467612,
+  "webTriangles": 134298,
+  "bytes": 336988,
+  "verifiedOemReplica": false
+}

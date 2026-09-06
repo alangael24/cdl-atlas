@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "scope": "Original partial CAD and exported overlay only",
+  "checks": [
+    {
+      "check": "Analytic wheel interface",
+      "status": "passed",
+      "details": {
+        "actualHoleCount": 10,
+        "actualHoleDiameterMm": 26.0,
+        "actualBoltCircleDiameterMm": [
+          285.75,
+          285.75,
+          285.75,
+          285.75,
+          285.75,
+          285.75,
+          285.75,
+          285.75,
+          285.75,
+          285.75
+        ],
+        "actualHubBoreDiameterMm": 220.1,
+        "method": "OpenCascade cylindrical faces and solid point-membership, not just parameter checks"
+      }
+    },
+    {
+      "check": "Analytic kingpin contact",
+      "status": "passed",
+      "details": {
+        "sectionDiameterXmm": 50.8,
+        "sectionDiameterZmm": 50.8,
+        "method": "Boolean section of the actual pin solid"
+      }
+    },
+    {
+      "check": "Nominal shell and empty cargo volume",
+      "status": "passed",
+      "details": {
+        "shellLengthMm": 16154.400000000001,
+        "shellWidthMm": 2590.7999999999997,
+        "interiorProbes": 3,
+        "note": "Chosen nominal envelope, not an OEM dimensional verification"
+      }
+    },
+    {
+      "check": "All generated CAD solids",
+      "status": "passed",
+      "details": {
+        "validSolids": 1369,
+        "instances": 36,
+        "groupCounts": {
+          "rim": 18,
+          "hub": 10,
+          "kingpin": 1,
+          "fifth": 1,
+          "trailerbody": 1,
+          "engine": 5
+        }
+      }
+    },
+    {
+      "check": "GLB hierarchy, labels, units and integrity",
+      "status": "passed",
+      "details": {
+        "bytes": 5899264,
+        "sha256": "023ba856d7d45f43ccb2ddb56f7e9ee63ac8f194475d1218c2378ae87236f3fd"
+      }
+    },
+    {
+      "check": "GLB round-trip and PBR materials",
+      "status": "passed",
+      "details": {
+        "meshes": 97,
+        "triangles": 467612,
+        "boundsMetres": [
+          [
+            -4.461363892555237,
+            0.2571845924854279,
+            -1.3095000052452088
+          ],
+          [
+            16.354400634765625,
+            4.114999771118164,
+            1.3095000052452088
+          ]
+        ],
+        "materials": [
+          "brass",
+          "cast",
+          "chrome",
+          "glass",
+          "plastic",
+          "rubber",
+          "steel",
+          "white",
+          "wood"
+        ]
+      }
+    }
+  ],
+  "seconds": 17.97,
+  "notTested": [
+    "Full truck geometric interference/clearances or OEM fit",
+    "VIN-specific configuration and complete dimensional accuracy",
+    "Application TypeScript typecheck/build and browser/WebGL integration",
+    "All original v2 assets; they are not included in this package"
+  ]
+}

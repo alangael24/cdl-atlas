@@ -51,3 +51,13 @@ This creates STEP, GLB, OpenCascade assembly data and a validation report. The f
 The Cascadia 126 / DD15 Gen 5 / 53-foot dry van is an educational reference reconstruction, **not verified 1:1 OEM CAD**. Component dimensions and installation positions remain estimates. Study the applicable state CDL manual and practice in the actual vehicle with an instructor.
 
 Interaction concept inspired by [Human Atlas](https://github.com/ashemag/human-atlas); no anatomy assets or source code were copied. Mechanical reference sources include Detroit DD15, Freightliner Cascadia, Bendix and SAF-HOLLAND documentation. No OEM photographs or third-party OEM CAD files are redistributed. Draco decoder licensing is included in `public/cad/draco/LICENSE`.
+
+## Reference revision v3
+
+The viewer merges v2 with an original partial CAD revision: corrected wheel interfaces and hub counts, a 50.8 mm nominal kingpin contact section, a hollow trailer body, and additional DD15 assemblies. Source geometry and accuracy limits are in [cad/REFERENCE_V3.md](cad/REFERENCE_V3.md).
+
+The delivered `reference-v3.glb` and its original manifest are preserved. The viewer loads `reference-v3-web.glb`, a compressed derivative (336,988 bytes). The combined displayed scene has 2,050,730 triangles, 188 study instances and the same 54 study cards. This remains a partial reference reconstruction, not a complete OEM replica.
+
+The standalone revision import, combined model/picking/camera/error checks, TypeScript check and production build are validated locally. These automated geometry checks do not certify browser rendering, vehicle clearances or OEM dimensional accuracy.
+
+To regenerate the optimized revision, install the optional tools in `cad/web-tools` and run `node cad/web-tools/prepare-reference.mjs` from the repository root. The tools retain the original GLB and write a decoded test copy into ignored `work/`.
