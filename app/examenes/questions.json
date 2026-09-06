@@ -1498,5 +1498,1255 @@
     ],
     "correct": 0,
     "why": "La revisión interior permite encontrar estudiantes dormidos u olvidados y objetos que quedaron."
+  },
+  {
+    "id": "general-11",
+    "category": "general",
+    "section": "2.1.1",
+    "prompt": {
+      "es": "¿Cuál es la razón principal de inspeccionar el vehículo?",
+      "en": "What is the main reason to inspect the vehicle?"
+    },
+    "options": [
+      {
+        "es": "Detectar problemas de seguridad",
+        "en": "Find safety problems"
+      },
+      {
+        "es": "Evitar lavar el camión",
+        "en": "Avoid washing the truck"
+      },
+      {
+        "es": "Reemplazar el mantenimiento",
+        "en": "Replace maintenance"
+      }
+    ],
+    "correct": 0,
+    "why": "Una inspección puede detectar defectos antes de que causen una avería o un choque."
+  },
+  {
+    "id": "general-12",
+    "category": "general",
+    "section": "2.1.2",
+    "prompt": {
+      "es": "Durante el viaje, ¿cuándo dejas de vigilar los instrumentos?",
+      "en": "When should you stop monitoring gauges during a trip?"
+    },
+    "options": [
+      {
+        "es": "Debo seguir vigilándolos durante el viaje",
+        "en": "I should keep monitoring them throughout the trip"
+      },
+      {
+        "es": "Después de la primera milla",
+        "en": "After the first mile"
+      },
+      {
+        "es": "Cuando el vehículo es nuevo",
+        "en": "When the vehicle is new"
+      }
+    ],
+    "correct": 0,
+    "why": "Una inspección inicial no detecta fallas que aparecen después; los instrumentos pueden avisarte de ellas."
+  },
+  {
+    "id": "general-13",
+    "category": "general",
+    "section": "2.1.3",
+    "prompt": {
+      "es": "Encuentras aceite en una superficie de fricción del freno. ¿Qué indica?",
+      "en": "You find oil on a brake friction surface. What does it indicate?"
+    },
+    "options": [
+      {
+        "es": "Un defecto que necesita corrección",
+        "en": "A defect needing correction"
+      },
+      {
+        "es": "Lubricación necesaria del freno",
+        "en": "Necessary brake lubrication"
+      },
+      {
+        "es": "Que el freno está nuevo",
+        "en": "That the brake is new"
+      }
+    ],
+    "correct": 0,
+    "why": "El aceite reduce la fricción necesaria para frenar; no es una condición normal de esa superficie."
+  },
+  {
+    "id": "general-14",
+    "category": "general",
+    "section": "2.1.3",
+    "prompt": {
+      "es": "Dos neumáticos gemelos se tocan. ¿Es aceptable?",
+      "en": "Two dual tires touch each other. Is that acceptable?"
+    },
+    "options": [
+      {
+        "es": "No, deben revisarse",
+        "en": "No, they need inspection"
+      },
+      {
+        "es": "Sí, así se apoyan",
+        "en": "Yes, they support each other"
+      },
+      {
+        "es": "Sí, siempre que llueva",
+        "en": "Yes, whenever it rains"
+      }
+    ],
+    "correct": 0,
+    "why": "El contacto entre gemelos es un problema que se busca durante la inspección."
+  },
+  {
+    "id": "general-15",
+    "category": "general",
+    "section": "2.1.3",
+    "prompt": {
+      "es": "¿Qué riesgo tiene una fuga de escape cerca de la cabina?",
+      "en": "What is a risk of an exhaust leak near the cab?"
+    },
+    "options": [
+      {
+        "es": "Que entren gases tóxicos",
+        "en": "Toxic fumes entering"
+      },
+      {
+        "es": "Que mejore la ventilación",
+        "en": "Improved ventilation"
+      },
+      {
+        "es": "Que aumente la visibilidad",
+        "en": "Improved visibility"
+      }
+    ],
+    "correct": 0,
+    "why": "Un escape dañado puede introducir gases peligrosos en la cabina o el dormitorio."
+  },
+  {
+    "id": "general-16",
+    "category": "general",
+    "section": "2.1.5",
+    "prompt": {
+      "es": "Detectas un defecto que hace inseguro el vehículo antes de salir. ¿Qué haces?",
+      "en": "You find an unsafe defect before departure. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Corregirlo antes de conducir",
+        "en": "Have it corrected before driving"
+      },
+      {
+        "es": "Salir si la entrega es urgente",
+        "en": "Leave if the delivery is urgent"
+      },
+      {
+        "es": "Conducir solo por calles pequeñas",
+        "en": "Drive only on small streets"
+      }
+    ],
+    "correct": 0,
+    "why": "La urgencia del viaje no convierte un vehículo inseguro en uno apto para circular."
+  },
+  {
+    "id": "general-17",
+    "category": "general",
+    "section": "2.2.4",
+    "prompt": {
+      "es": "Antes de retroceder, ¿cómo compruebas una zona que no ves bien?",
+      "en": "Before backing, how should you check an unclear area?"
+    },
+    "options": [
+      {
+        "es": "Bajar y revisar la trayectoria",
+        "en": "Get out and check the path"
+      },
+      {
+        "es": "Suponer que está libre",
+        "en": "Assume it is clear"
+      },
+      {
+        "es": "Tocar bocina y avanzar en reversa",
+        "en": "Honk and keep backing"
+      }
+    ],
+    "correct": 0,
+    "why": "Revisar desde fuera permite detectar obstáculos laterales, bajos y elevados que los espejos no muestran."
+  },
+  {
+    "id": "general-18",
+    "category": "general",
+    "section": "2.2.4",
+    "prompt": {
+      "es": "Cuando puedes elegir, ¿hacia qué lado conviene retroceder girando?",
+      "en": "When you have a choice, which side should you back toward?"
+    },
+    "options": [
+      {
+        "es": "Hacia el lado del conductor",
+        "en": "Toward the driver side"
+      },
+      {
+        "es": "Siempre hacia el lado ciego",
+        "en": "Always toward the blind side"
+      },
+      {
+        "es": "El lado no cambia la visibilidad",
+        "en": "The side does not affect visibility"
+      }
+    ],
+    "correct": 0,
+    "why": "Hacia el lado del conductor puedes observar mejor la parte trasera por la ventana lateral."
+  },
+  {
+    "id": "general-19",
+    "category": "general",
+    "section": "2.2.4",
+    "prompt": {
+      "es": "¿Qué debes acordar con el ayudante antes de retroceder?",
+      "en": "What should you agree on with a backing helper?"
+    },
+    "options": [
+      {
+        "es": "Señales claras, incluida la de detenerse",
+        "en": "Clear signals, including stop"
+      },
+      {
+        "es": "Que camine donde no pueda verlo",
+        "en": "That they stand out of sight"
+      },
+      {
+        "es": "Que nunca detenga la maniobra",
+        "en": "That they never stop the maneuver"
+      }
+    ],
+    "correct": 0,
+    "why": "Ambos deben entender las señales antes de que el vehículo se mueva."
+  },
+  {
+    "id": "general-20",
+    "category": "general",
+    "section": "2.2.1",
+    "prompt": {
+      "es": "En una superficie resbalosa, ¿cómo aceleras?",
+      "en": "How should you accelerate on a slippery surface?"
+    },
+    "options": [
+      {
+        "es": "Gradualmente",
+        "en": "Gradually"
+      },
+      {
+        "es": "Con el máximo acelerador",
+        "en": "With full throttle"
+      },
+      {
+        "es": "A golpes de acelerador",
+        "en": "With abrupt throttle inputs"
+      }
+    ],
+    "correct": 0,
+    "why": "Demasiada potencia puede hacer patinar las ruedas motrices y perder tracción."
+  },
+  {
+    "id": "general-21",
+    "category": "general",
+    "section": "2.2.2",
+    "prompt": {
+      "es": "¿Cómo sujetas el volante al conducir?",
+      "en": "How should you hold the steering wheel?"
+    },
+    "options": [
+      {
+        "es": "Firmemente con ambas manos",
+        "en": "Firmly with both hands"
+      },
+      {
+        "es": "Solo con las puntas de los dedos",
+        "en": "Only with fingertips"
+      },
+      {
+        "es": "Con una mano fuera de la ventana",
+        "en": "With one hand outside the window"
+      }
+    ],
+    "correct": 0,
+    "why": "Un bache puede sacudir el volante; sujetarlo bien ayuda a mantener el control."
+  },
+  {
+    "id": "general-22",
+    "category": "general",
+    "section": "2.3.4",
+    "prompt": {
+      "es": "En piso resbaloso, ¿qué precaución se toma con el retardador?",
+      "en": "What precaution applies to a retarder on slippery roads?"
+    },
+    "options": [
+      {
+        "es": "Desactivarlo para evitar pérdida de tracción",
+        "en": "Turn it off to avoid loss of traction"
+      },
+      {
+        "es": "Usarlo siempre al máximo",
+        "en": "Always use maximum retardation"
+      },
+      {
+        "es": "Usarlo para acelerar",
+        "en": "Use it to accelerate"
+      }
+    ],
+    "correct": 0,
+    "why": "El retardador puede hacer perder adherencia a las ruedas motrices en una superficie resbalosa."
+  },
+  {
+    "id": "general-23",
+    "category": "general",
+    "section": "2.4.2",
+    "prompt": {
+      "es": "Antes de cambiar de carril, ¿qué revisas?",
+      "en": "What should you check before changing lanes?"
+    },
+    "options": [
+      {
+        "es": "Espejos y espacio lateral",
+        "en": "Mirrors and side clearance"
+      },
+      {
+        "es": "Solo el velocímetro",
+        "en": "Only the speedometer"
+      },
+      {
+        "es": "Solo el vehículo de enfrente",
+        "en": "Only the vehicle ahead"
+      }
+    ],
+    "correct": 0,
+    "why": "Necesitas comprobar tráfico y espacio alrededor, y seguir revisando mientras realizas la maniobra."
+  },
+  {
+    "id": "general-24",
+    "category": "general",
+    "section": "2.5.1",
+    "prompt": {
+      "es": "¿Cuándo activas la direccional para una maniobra?",
+      "en": "When should you signal for a maneuver?"
+    },
+    "options": [
+      {
+        "es": "Con anticipación suficiente",
+        "en": "Well in advance"
+      },
+      {
+        "es": "Cuando ya terminé",
+        "en": "After finishing"
+      },
+      {
+        "es": "Solo si alguien toca bocina",
+        "en": "Only if someone honks"
+      }
+    ],
+    "correct": 0,
+    "why": "Señalizar antes da tiempo a otros conductores para entender tu intención."
+  },
+  {
+    "id": "general-25",
+    "category": "general",
+    "section": "2.5.1",
+    "prompt": {
+      "es": "Después de terminar un giro, ¿qué verificas?",
+      "en": "What should you check after completing a turn?"
+    },
+    "options": [
+      {
+        "es": "Que la direccional esté apagada",
+        "en": "That the turn signal is off"
+      },
+      {
+        "es": "Que siga encendida todo el viaje",
+        "en": "That the signal stays on all trip"
+      },
+      {
+        "es": "Que los espejos estén plegados",
+        "en": "That the mirrors are folded"
+      }
+    ],
+    "correct": 0,
+    "why": "Una señal que queda encendida puede hacer creer a otros que vas a girar otra vez."
+  },
+  {
+    "id": "general-26",
+    "category": "general",
+    "section": "2.6.1",
+    "prompt": {
+      "es": "¿Qué compone la distancia total de parada básica?",
+      "en": "What makes up basic total stopping distance?"
+    },
+    "options": [
+      {
+        "es": "Percepción, reacción y frenado",
+        "en": "Perception, reaction and braking"
+      },
+      {
+        "es": "Solo la distancia de frenado",
+        "en": "Braking distance only"
+      },
+      {
+        "es": "Solo el largo del vehículo",
+        "en": "Vehicle length only"
+      }
+    ],
+    "correct": 0,
+    "why": "El camión también avanza mientras detectas el peligro y reaccionas, antes de que empiece el frenado."
+  },
+  {
+    "id": "general-27",
+    "category": "general",
+    "section": "2.6.2",
+    "prompt": {
+      "es": "¿Qué significa hidroplaneo?",
+      "en": "What does hydroplaning mean?"
+    },
+    "options": [
+      {
+        "es": "Los neumáticos pierden contacto útil al deslizarse sobre agua",
+        "en": "Tires lose effective road contact while riding on water"
+      },
+      {
+        "es": "El motor se enfría normalmente",
+        "en": "The engine cools normally"
+      },
+      {
+        "es": "Las luces reflejan en el agua",
+        "en": "Lights reflect off water"
+      }
+    ],
+    "correct": 0,
+    "why": "Una capa de agua puede separar el neumático de la vía y reducir fuertemente el control."
+  },
+  {
+    "id": "general-28",
+    "category": "general",
+    "section": "2.6.4",
+    "prompt": {
+      "es": "De noche, ¿qué relación debe tener tu velocidad con los faros?",
+      "en": "At night, how should your speed relate to your headlights?"
+    },
+    "options": [
+      {
+        "es": "Permitir detenerme dentro de lo que alcanzo a ver",
+        "en": "Allow stopping within the distance I can see"
+      },
+      {
+        "es": "Permitir avanzar más allá de lo visible antes de frenar",
+        "en": "Allow traveling beyond visibility before stopping"
+      },
+      {
+        "es": "Depender solo del límite de velocidad",
+        "en": "Depend only on the speed limit"
+      }
+    ],
+    "correct": 0,
+    "why": "No debes avanzar tan rápido que la distancia de parada exceda tu campo visible."
+  },
+  {
+    "id": "general-29",
+    "category": "general",
+    "section": "2.6.7",
+    "prompt": {
+      "es": "¿Qué esperas en una zona de obras?",
+      "en": "What should you expect in a work zone?"
+    },
+    "options": [
+      {
+        "es": "Cambios de carril, trabajadores y peligros imprevistos",
+        "en": "Lane changes, workers and unexpected hazards"
+      },
+      {
+        "es": "La misma trayectoria de siempre",
+        "en": "The usual unchanged path"
+      },
+      {
+        "es": "Que todas las señales sean opcionales",
+        "en": "That all signs are optional"
+      }
+    ],
+    "correct": 0,
+    "why": "Las obras cambian el espacio disponible y pueden introducir personas y equipos cerca del tráfico."
+  },
+  {
+    "id": "general-30",
+    "category": "general",
+    "section": "2.7.2",
+    "prompt": {
+      "es": "Un vehículo te sigue demasiado cerca. ¿Qué ayuda?",
+      "en": "A vehicle is following too closely. What helps?"
+    },
+    "options": [
+      {
+        "es": "Aumentar el espacio delante y evitar maniobras bruscas",
+        "en": "Increase space ahead and avoid abrupt maneuvers"
+      },
+      {
+        "es": "Frenar bruscamente para advertirle",
+        "en": "Brake sharply to warn it"
+      },
+      {
+        "es": "Competir acelerando",
+        "en": "Compete by accelerating"
+      }
+    ],
+    "correct": 0,
+    "why": "Más espacio delante permite frenar gradualmente y reduce el riesgo de que te alcance."
+  },
+  {
+    "id": "general-31",
+    "category": "general",
+    "section": "2.7.3",
+    "prompt": {
+      "es": "Un viento lateral fuerte, ¿a qué vehículo puede afectar especialmente?",
+      "en": "Which vehicle can be especially affected by strong crosswinds?"
+    },
+    "options": [
+      {
+        "es": "Uno alto y ligero",
+        "en": "A tall, lightly loaded vehicle"
+      },
+      {
+        "es": "Solo a vehículos estacionados",
+        "en": "Only parked vehicles"
+      },
+      {
+        "es": "A ninguno si la vía está seca",
+        "en": "None if the road is dry"
+      }
+    ],
+    "correct": 0,
+    "why": "La superficie lateral amplia y el poco peso hacen más difícil mantener la trayectoria."
+  },
+  {
+    "id": "general-32",
+    "category": "general",
+    "section": "2.7.4",
+    "prompt": {
+      "es": "Un puente parece demasiado bajo y no confirmas el espacio. ¿Qué haces?",
+      "en": "A bridge looks too low and clearance is uncertain. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Tomar una ruta que permita pasar con seguridad",
+        "en": "Use a route with safe clearance"
+      },
+      {
+        "es": "Pasar más rápido",
+        "en": "Drive through faster"
+      },
+      {
+        "es": "Confiar solo en que otro camión pasó",
+        "en": "Rely only on another truck having passed"
+      }
+    ],
+    "correct": 0,
+    "why": "No supongas que tienes la misma altura que otro vehículo ni que el espacio es suficiente."
+  },
+  {
+    "id": "general-33",
+    "category": "general",
+    "section": "2.7.4",
+    "prompt": {
+      "es": "¿Qué puede cambiar la altura libre real de un puente?",
+      "en": "What can change actual bridge clearance?"
+    },
+    "options": [
+      {
+        "es": "Repavimentación o nieve acumulada",
+        "en": "Repaving or packed snow"
+      },
+      {
+        "es": "El color del remolque",
+        "en": "Trailer color"
+      },
+      {
+        "es": "La hora en el reloj",
+        "en": "The time on the clock"
+      }
+    ],
+    "correct": 0,
+    "why": "La superficie puede elevarse y reducir el espacio respecto a una señal antigua."
+  },
+  {
+    "id": "general-34",
+    "category": "general",
+    "section": "2.7.5",
+    "prompt": {
+      "es": "Con un remolque bajo, ¿qué riesgo hay en un cruce ferroviario elevado?",
+      "en": "What risk does a low trailer face at a raised railroad crossing?"
+    },
+    "options": [
+      {
+        "es": "Quedar atascado sobre las vías",
+        "en": "Getting stuck on the tracks"
+      },
+      {
+        "es": "Que aumente automáticamente su altura",
+        "en": "Automatically gaining clearance"
+      },
+      {
+        "es": "Que el tren frene por él",
+        "en": "That a train will brake for it"
+      }
+    ],
+    "correct": 0,
+    "why": "Comprueba el espacio inferior y no te arriesgues a quedar inmovilizado sobre las vías."
+  },
+  {
+    "id": "general-35",
+    "category": "general",
+    "section": "2.8.2",
+    "prompt": {
+      "es": "Ves una puerta de automóvil estacionado que podría abrirse. ¿Cómo lo tratas?",
+      "en": "A parked car door might open. How should you treat it?"
+    },
+    "options": [
+      {
+        "es": "Como un peligro que requiere espacio y atención",
+        "en": "As a hazard requiring space and attention"
+      },
+      {
+        "es": "Como algo imposible si no hay direccional",
+        "en": "As impossible without a turn signal"
+      },
+      {
+        "es": "Como una invitación a pasar más cerca",
+        "en": "As a reason to pass closer"
+      }
+    ],
+    "correct": 0,
+    "why": "Una persona puede salir de un vehículo estacionado sin advertirte."
+  },
+  {
+    "id": "general-36",
+    "category": "general",
+    "section": "2.9.6",
+    "prompt": {
+      "es": "Necesitas ajustar una ruta en el teléfono. ¿Qué haces?",
+      "en": "You need to adjust a route on your phone. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Detenerme en un lugar seguro primero",
+        "en": "Stop in a safe place first"
+      },
+      {
+        "es": "Escribir mientras giro",
+        "en": "Type while turning"
+      },
+      {
+        "es": "Mirar el teléfono solo en curvas",
+        "en": "Look at the phone only in curves"
+      }
+    ],
+    "correct": 0,
+    "why": "Preparar los dispositivos antes de conducir evita apartar atención y manos durante la marcha."
+  },
+  {
+    "id": "general-37",
+    "category": "general",
+    "section": "2.10.3",
+    "prompt": {
+      "es": "Otro conductor intenta provocarte. ¿Qué respuesta conviene?",
+      "en": "Another driver tries to provoke you. What is the best response?"
+    },
+    "options": [
+      {
+        "es": "Evitar confrontación y dejarle espacio",
+        "en": "Avoid confrontation and give space"
+      },
+      {
+        "es": "Bloquearle el paso",
+        "en": "Block their path"
+      },
+      {
+        "es": "Responder con gestos agresivos",
+        "en": "Respond with aggressive gestures"
+      }
+    ],
+    "correct": 0,
+    "why": "Competir o confrontar aumenta el peligro; mantén distancia y concéntrate en conducir."
+  },
+  {
+    "id": "general-38",
+    "category": "general",
+    "section": "2.11.5",
+    "prompt": {
+      "es": "Un vehículo de frente trae luces que te deslumbran. ¿Qué haces?",
+      "en": "An oncoming vehicle has dazzling headlights. What should you do?"
+    },
+    "options": [
+      {
+        "es": "Evitar mirar directamente las luces",
+        "en": "Avoid looking directly at the lights"
+      },
+      {
+        "es": "Mirarlas fijamente",
+        "en": "Stare at them"
+      },
+      {
+        "es": "Cerrar ambos ojos",
+        "en": "Close both eyes"
+      }
+    ],
+    "correct": 0,
+    "why": "Mirar directamente el resplandor empeora la recuperación de la visión; vigila el borde derecho de tu carril."
+  },
+  {
+    "id": "general-39",
+    "category": "general",
+    "section": "2.13.2",
+    "prompt": {
+      "es": "¿Dónde puede aparecer hielo antes que en otros tramos?",
+      "en": "Where can ice appear before other road sections?"
+    },
+    "options": [
+      {
+        "es": "En puentes y zonas sombreadas",
+        "en": "On bridges and shaded areas"
+      },
+      {
+        "es": "Solo dentro de túneles calientes",
+        "en": "Only in warm tunnels"
+      },
+      {
+        "es": "Nunca sobre puentes",
+        "en": "Never on bridges"
+      }
+    ],
+    "correct": 0,
+    "why": "Esas superficies pueden enfriarse antes o conservar el hielo cuando otras ya no lo tienen."
+  },
+  {
+    "id": "general-40",
+    "category": "general",
+    "section": "2.14.1",
+    "prompt": {
+      "es": "La presión del neumático sube por el calor. ¿Debes soltar aire solo por eso?",
+      "en": "Tire pressure rises with heat. Should you release air just for that reason?"
+    },
+    "options": [
+      {
+        "es": "No; al enfriarse quedaría con poca presión",
+        "en": "No; it could be underinflated when cool"
+      },
+      {
+        "es": "Sí, hasta dejarlo casi vacío",
+        "en": "Yes, until nearly empty"
+      },
+      {
+        "es": "Sí, en cada parada sin medir",
+        "en": "Yes, at every stop without measuring"
+      }
+    ],
+    "correct": 0,
+    "why": "El aumento térmico es esperado; no elimines aire para compensarlo. Revisa presión según las condiciones indicadas."
+  },
+  {
+    "id": "general-41",
+    "category": "general",
+    "section": "2.15.3",
+    "prompt": {
+      "es": "En un cruce ferroviario sin señales activas, ¿qué debes asumir?",
+      "en": "At a railroad crossing without active signals, what should you assume?"
+    },
+    "options": [
+      {
+        "es": "Que puede venir un tren",
+        "en": "That a train may approach"
+      },
+      {
+        "es": "Que no se usa la vía",
+        "en": "That the track is unused"
+      },
+      {
+        "es": "Que los trenes ceden el paso",
+        "en": "That trains yield"
+      }
+    ],
+    "correct": 0,
+    "why": "La ausencia de luces o barreras no demuestra que no circule un tren."
+  },
+  {
+    "id": "general-42",
+    "category": "general",
+    "section": "2.15.5",
+    "prompt": {
+      "es": "Hay tráfico detenido justo después de las vías. ¿Cuándo entras?",
+      "en": "Traffic is stopped just beyond the tracks. When should you enter?"
+    },
+    "options": [
+      {
+        "es": "Cuando pueda despejar completamente el cruce",
+        "en": "When I can clear the crossing completely"
+      },
+      {
+        "es": "Cuando quepa solo la cabina",
+        "en": "When only the cab fits"
+      },
+      {
+        "es": "Cuando el de atrás toque bocina",
+        "en": "When the driver behind honks"
+      }
+    ],
+    "correct": 0,
+    "why": "Necesitas espacio para todo el vehículo, sin dejar el remolque sobre las vías."
+  },
+  {
+    "id": "general-43",
+    "category": "general",
+    "section": "2.16.4",
+    "prompt": {
+      "es": "¿Para qué sirve una rampa de escape en una bajada?",
+      "en": "What is an escape ramp on a downgrade for?"
+    },
+    "options": [
+      {
+        "es": "Detener un vehículo fuera de control",
+        "en": "Stop a runaway vehicle"
+      },
+      {
+        "es": "Estacionar para comer",
+        "en": "Park for a meal"
+      },
+      {
+        "es": "Adelantar a otros camiones",
+        "en": "Pass other trucks"
+      }
+    ],
+    "correct": 0,
+    "why": "Estas rampas están diseñadas para frenar vehículos que no logran controlar la velocidad."
+  },
+  {
+    "id": "general-44",
+    "category": "general",
+    "section": "2.17.4",
+    "prompt": {
+      "es": "Revienta un neumático y no hay choque inminente. ¿Qué haces inicialmente?",
+      "en": "A tire blows out with no imminent collision. What should you do first?"
+    },
+    "options": [
+      {
+        "es": "Sujetar firme el volante y evitar una frenada brusca",
+        "en": "Hold the wheel firmly and avoid hard braking"
+      },
+      {
+        "es": "Pisar el freno a fondo de inmediato",
+        "en": "Immediately slam on the brakes"
+      },
+      {
+        "es": "Soltar el volante",
+        "en": "Release the steering wheel"
+      }
+    ],
+    "correct": 0,
+    "why": "Mantén control mientras pierde velocidad; después frena suavemente y detente con seguridad."
+  },
+  {
+    "id": "general-45",
+    "category": "general",
+    "section": "2.17.4",
+    "prompt": {
+      "es": "Tras detenerte por una posible falla de neumático, ¿qué revisas?",
+      "en": "After stopping for a possible tire failure, what should you inspect?"
+    },
+    "options": [
+      {
+        "es": "Todos los neumáticos",
+        "en": "All tires"
+      },
+      {
+        "es": "Solo el espejo",
+        "en": "Only the mirror"
+      },
+      {
+        "es": "Nada si el volante se siente normal",
+        "en": "Nothing if steering feels normal"
+      }
+    ],
+    "correct": 0,
+    "why": "La falla de uno de los gemelos puede no sentirse claramente; hay que comprobarlos visualmente."
+  },
+  {
+    "id": "general-46",
+    "category": "general",
+    "section": "2.18.7",
+    "prompt": {
+      "es": "La luz de falla ABS queda encendida. ¿Qué significa?",
+      "en": "The ABS malfunction lamp remains on. What does it mean?"
+    },
+    "options": [
+      {
+        "es": "Puede faltar la función antibloqueo y debe revisarse",
+        "en": "Antilock function may be unavailable and needs service"
+      },
+      {
+        "es": "Que el vehículo no tiene frenos de ningún tipo",
+        "en": "That the vehicle has no brakes of any kind"
+      },
+      {
+        "es": "Que el ABS funciona mejor",
+        "en": "That ABS is working better"
+      }
+    ],
+    "correct": 0,
+    "why": "Los frenos básicos pueden seguir funcionando, pero la ayuda antibloqueo puede no estar disponible."
+  },
+  {
+    "id": "general-47",
+    "category": "general",
+    "section": "2.20.1",
+    "prompt": {
+      "es": "Tras un choque, ¿por qué se protege la zona?",
+      "en": "Why should the area be protected after a crash?"
+    },
+    "options": [
+      {
+        "es": "Para prevenir otro choque",
+        "en": "To prevent another crash"
+      },
+      {
+        "es": "Para ocultar lo ocurrido",
+        "en": "To hide what happened"
+      },
+      {
+        "es": "Para permitir que todos se acerquen",
+        "en": "To let everyone approach"
+      }
+    ],
+    "correct": 0,
+    "why": "Advertir a otros conductores y mantenerlos alejados reduce el riesgo de una segunda colisión."
+  },
+  {
+    "id": "general-48",
+    "category": "general",
+    "section": "2.21.3",
+    "prompt": {
+      "es": "¿Cuándo debes aprender a usar tu extintor?",
+      "en": "When should you learn how to use your extinguisher?"
+    },
+    "options": [
+      {
+        "es": "Antes de necesitarlo",
+        "en": "Before needing it"
+      },
+      {
+        "es": "Solo cuando ya hay llamas",
+        "en": "Only once flames appear"
+      },
+      {
+        "es": "Después de descargarlo",
+        "en": "After discharging it"
+      }
+    ],
+    "correct": 0,
+    "why": "Conocer instrucciones y condición del equipo antes de una emergencia evita improvisar."
+  },
+  {
+    "id": "general-49",
+    "category": "general",
+    "section": "2.21.3",
+    "prompt": {
+      "es": "Cuando es seguro usar el extintor, ¿a dónde se apunta?",
+      "en": "When it is safe to use an extinguisher, where should you aim?"
+    },
+    "options": [
+      {
+        "es": "A la base del fuego",
+        "en": "At the base of the fire"
+      },
+      {
+        "es": "Al humo más alto",
+        "en": "At the highest smoke"
+      },
+      {
+        "es": "Al cielo",
+        "en": "At the sky"
+      }
+    ],
+    "correct": 0,
+    "why": "El agente debe alcanzar la fuente del fuego, no únicamente las llamas superiores."
+  },
+  {
+    "id": "general-50",
+    "category": "general",
+    "section": "2.21.3",
+    "prompt": {
+      "es": "¿Por qué no debes abrir las puertas de una caja con incendio de carga?",
+      "en": "Why should you avoid opening trailer doors during a cargo fire?"
+    },
+    "options": [
+      {
+        "es": "Puede entrar oxígeno y avivar el incendio",
+        "en": "Oxygen may enter and intensify the fire"
+      },
+      {
+        "es": "El humo siempre apagará las luces",
+        "en": "Smoke will always turn off the lights"
+      },
+      {
+        "es": "Las puertas enfrían demasiado la carga",
+        "en": "The doors cool the cargo too much"
+      }
+    ],
+    "correct": 0,
+    "why": "Abrir puede alimentar el fuego. Mantén distancia y solicita ayuda de emergencia."
+  },
+  {
+    "id": "general-51",
+    "category": "general",
+    "section": "3.1",
+    "prompt": {
+      "es": "Otra persona cargó el camión. ¿Sigues siendo responsable de revisar la seguridad de la carga?",
+      "en": "Someone else loaded the truck. Are you still responsible for cargo safety checks?"
+    },
+    "options": [
+      {
+        "es": "Sí",
+        "en": "Yes"
+      },
+      {
+        "es": "No, solo el cargador",
+        "en": "No, only the loader is"
+      },
+      {
+        "es": "Solo si me pagan aparte",
+        "en": "Only if paid extra"
+      }
+    ],
+    "correct": 0,
+    "why": "El conductor debe reconocer sobrecarga, mala distribución y sujeción insegura aunque no haya cargado personalmente."
+  },
+  {
+    "id": "general-52",
+    "category": "general",
+    "section": "3.2.1",
+    "prompt": {
+      "es": "¿Qué es el peso por eje?",
+      "en": "What is axle weight?"
+    },
+    "options": [
+      {
+        "es": "El peso transmitido al suelo por un eje o grupo de ejes",
+        "en": "Weight carried to the ground by an axle or axle group"
+      },
+      {
+        "es": "Solo el peso del volante",
+        "en": "Only steering wheel weight"
+      },
+      {
+        "es": "El volumen del tanque",
+        "en": "Tank volume"
+      }
+    ],
+    "correct": 0,
+    "why": "No basta conocer el peso total: también importa cómo se reparte entre los ejes."
+  },
+  {
+    "id": "general-53",
+    "category": "general",
+    "section": "3.2.2",
+    "prompt": {
+      "es": "¿Qué puede causar una sobrecarga?",
+      "en": "What can overloading cause?"
+    },
+    "options": [
+      {
+        "es": "Problemas de dirección y mayor exigencia de frenado",
+        "en": "Steering problems and increased braking demand"
+      },
+      {
+        "es": "Frenadas garantizadas más cortas",
+        "en": "Guaranteed shorter stops"
+      },
+      {
+        "es": "Menos desgaste en todos los componentes",
+        "en": "Less wear on every component"
+      }
+    ],
+    "correct": 0,
+    "why": "El exceso de peso afecta manejo, velocidad y capacidad de detenerse."
+  },
+  {
+    "id": "general-54",
+    "category": "general",
+    "section": "3.2.3",
+    "prompt": {
+      "es": "¿Dónde conviene colocar la parte más pesada de una carga apilada?",
+      "en": "Where should the heaviest part of stacked cargo go?"
+    },
+    "options": [
+      {
+        "es": "Debajo de lo más ligero",
+        "en": "Below lighter cargo"
+      },
+      {
+        "es": "Siempre arriba",
+        "en": "Always on top"
+      },
+      {
+        "es": "Suspendida de las puertas",
+        "en": "Hanging from the doors"
+      }
+    ],
+    "correct": 0,
+    "why": "Mantener el peso bajo reduce el centro de gravedad y favorece la estabilidad."
+  },
+  {
+    "id": "general-55",
+    "category": "general",
+    "section": "3.2.4",
+    "prompt": {
+      "es": "Hay muy poco peso en los ejes motrices. ¿Qué problema puede aparecer?",
+      "en": "There is too little weight on the drive axles. What can happen?"
+    },
+    "options": [
+      {
+        "es": "Pérdida de tracción",
+        "en": "Poor traction"
+      },
+      {
+        "es": "Tracción ilimitada",
+        "en": "Unlimited traction"
+      },
+      {
+        "es": "Eliminación del patinaje",
+        "en": "Elimination of wheelspin"
+      }
+    ],
+    "correct": 0,
+    "why": "Las ruedas motrices necesitan una distribución adecuada del peso para transmitir fuerza al suelo."
+  },
+  {
+    "id": "general-56",
+    "category": "general",
+    "section": "3.3.1",
+    "prompt": {
+      "es": "¿Para qué se usan bloqueos y apuntalamientos de carga?",
+      "en": "What are cargo blocking and bracing used for?"
+    },
+    "options": [
+      {
+        "es": "Para limitar el movimiento de la carga",
+        "en": "To limit cargo movement"
+      },
+      {
+        "es": "Para ocultar el peso",
+        "en": "To hide the weight"
+      },
+      {
+        "es": "Para reemplazar los neumáticos",
+        "en": "To replace tires"
+      }
+    ],
+    "correct": 0,
+    "why": "Ayudan a impedir que la carga se desplace y afecte la estabilidad o golpee otras partes."
+  },
+  {
+    "id": "general-57",
+    "category": "general",
+    "section": "3.3.2",
+    "prompt": {
+      "es": "En una caja cerrada, ¿puede seguir siendo necesaria la sujeción interior?",
+      "en": "Can cargo securement still be needed inside a closed van?"
+    },
+    "options": [
+      {
+        "es": "Sí, para evitar desplazamientos",
+        "en": "Yes, to prevent shifting"
+      },
+      {
+        "es": "No, las paredes resuelven todo",
+        "en": "No, walls solve everything"
+      },
+      {
+        "es": "Solo cuando está estacionada",
+        "en": "Only while parked"
+      }
+    ],
+    "correct": 0,
+    "why": "Las paredes no garantizan que la carga quede inmóvil; un desplazamiento afecta el manejo."
+  },
+  {
+    "id": "general-58",
+    "category": "general",
+    "section": "3.3.3",
+    "prompt": {
+      "es": "¿Qué función cumple una mampara delantera de carga?",
+      "en": "What is the purpose of a cargo header board?"
+    },
+    "options": [
+      {
+        "es": "Proteger frente al desplazamiento de carga hacia adelante",
+        "en": "Protect against cargo moving forward"
+      },
+      {
+        "es": "Permitir sobrecargar el eje",
+        "en": "Allow axle overloading"
+      },
+      {
+        "es": "Sustituir todos los amarres",
+        "en": "Replace every tie-down"
+      }
+    ],
+    "correct": 0,
+    "why": "La estructura delantera ayuda a impedir que la carga avance contra la cabina durante una parada brusca."
+  },
+  {
+    "id": "general-59",
+    "category": "general",
+    "section": "3.3.4",
+    "prompt": {
+      "es": "Una lona se agita mucho durante el viaje. ¿Por qué importa?",
+      "en": "A cargo cover is flapping strongly during travel. Why does it matter?"
+    },
+    "options": [
+      {
+        "es": "Puede soltarse y obstruir la visión",
+        "en": "It may come loose and obstruct visibility"
+      },
+      {
+        "es": "Demuestra que está bien sujeta",
+        "en": "It proves secure fastening"
+      },
+      {
+        "es": "Siempre reduce el consumo",
+        "en": "It always reduces fuel use"
+      }
+    ],
+    "correct": 0,
+    "why": "Una cubierta suelta puede desprenderse y crear peligro para ti y otros conductores."
+  },
+  {
+    "id": "general-60",
+    "category": "general",
+    "section": "3.3.5",
+    "prompt": {
+      "es": "Con una carga sellada que no puedes abrir, ¿qué debes seguir comprobando?",
+      "en": "With a sealed load you cannot open, what must you still check?"
+    },
+    "options": [
+      {
+        "es": "Los límites de peso total y por eje",
+        "en": "Gross and axle weight limits"
+      },
+      {
+        "es": "Nada porque tiene sello",
+        "en": "Nothing because it has a seal"
+      },
+      {
+        "es": "Solo el color del sello",
+        "en": "Only the seal color"
+      }
+    ],
+    "correct": 0,
+    "why": "El sello impide revisar el interior, pero no elimina la responsabilidad sobre los pesos."
   }
 ]
