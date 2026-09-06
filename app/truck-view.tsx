@@ -9,6 +9,7 @@ import {disposeCadObject} from './cad-model';
 import {loadReferenceRevision} from './reference-revision';
 import {frameBounds,zoomCamera} from './model-camera';
 import {parts} from './data';
+import {PointerGesture} from './pointer-gesture';
 type Props={selected:string;zone:string;xray:boolean;exploded:boolean;isolated:boolean;view:string;reset:number;zoom:number;focus:number;instanceStep:number;onInstance:(label:string,index:number,count:number)=>void;onSelect:(id:string)=>void};
 export default function TruckView(props:Props){
  const host=useRef<HTMLDivElement>(null),api=useRef<{update:(p:Props)=>void}|null>(null),latest=useRef(props);
@@ -22,7 +23,7 @@ export default function TruckView(props:Props){
   el.appendChild(renderer.domElement);renderer.domElement.setAttribute('aria-label','Camión y componentes 3D detallados. Arrastra para girar. Usa la lista para seleccionar piezas con teclado.');
   const scene=new T.Scene(),camera=new T.PerspectiveCamera(36,1,.005,200);
   const studio=new RoomEnvironment(),pmrem=new T.PMREMGenerator(renderer),environment=pmrem.fromScene(studio,.035);scene.environment=environment.texture;scene.environmentIntensity=.9;studio.dispose();pmrem.dispose();
-  const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.09;controls.enableZoom=true;controls.zoomToCursor=true;controls.zoomSpeed=1.25;controls.screenSpacePanning=true;controls.minDistance=.015;controls.maxDistance=65;controls.maxPolarAngle=Math.PI*.95;
+  const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.14;controls.enableZoom=true;controls.zoomToCursor=false;controls.zoomSpeed=.85;controls.rotateSpeed=.5;controls.panSpeed=.8;controls.touches.ONE=T.TOUCH.ROTATE;controls.touches.TWO=T.TOUCH.DOLLY_PAN;controls.screenSpacePanning=true;controls.minDistance=.015;controls.maxDistance=65;controls.maxPolarAngle=Math.PI*.95;
   scene.add(new T.HemisphereLight('#e8efff','#77736b',.75));
   const sun=new T.DirectionalLight('#fff8ef',2.5);sun.position.set(-9,16,10);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-23,right:23,top:23,bottom:-23,near:.1,far:65});sun.shadow.bias=-.0002;sun.shadow.normalBias=.012;scene.add(sun);
   const fill=new T.DirectionalLight('#e5eeff',1.5);fill.position.set(9,7,-12);scene.add(fill);
@@ -34,10 +35,11 @@ export default function TruckView(props:Props){
   const loader=new GLTFLoader().setDRACOLoader(draco);
   let dirty=60,lastSelected='',lastView='',lastReset=-1,lastFocus=0,lastZoom=0,lastStep=-1,lastIsolated=false,lastExploded=false,currentInstance=0,pendingPick:{id:string;index:number}|null=null;
   const defaultInstance:Record<string,number>={chamber:2,brakehose:2,slack:2,drum:2};
-  const raycaster=new T.Raycaster(),pointer=new T.Vector2();let down=[0,0];let pointers=0,multitouch=false;
-  const pointerDown=(e:PointerEvent)=>{pointers++;if(pointers>1)multitouch=true;else{multitouch=false;down=[e.clientX,e.clientY]}};
+  const raycaster=new T.Raycaster(),pointer=new T.Vector2(),gesture=new PointerGesture();
+  const pointerDown=(e:PointerEvent)=>{gesture.down(e.pointerId,e.clientX,e.clientY)};
+  const pointerMove=(e:PointerEvent)=>{gesture.move(e.pointerId,e.clientX,e.clientY)};
   const pointerUp=(e:PointerEvent)=>{
-   pointers=Math.max(0,pointers-1);if(multitouch||Math.hypot(e.clientX-down[0],e.clientY-down[1])>6)return;
+   const tap=gesture.up(e.pointerId,e.clientX,e.clientY);if(e.button!==0||!tap)return;
    const r=el.getBoundingClientRect();pointer.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);
    const pickable:T.Object3D[]=[];root.traverseVisible(o=>{if(o instanceof T.Mesh&&(o.material as T.Material).opacity>.2)pickable.push(o)});
    const hit=raycaster.intersectObjects(pickable,false)[0];if(hit&&parts.some(p=>p.id===hit.object.userData.part)){
@@ -45,8 +47,8 @@ export default function TruckView(props:Props){
     latest.current.onSelect(id);if(latest.current.selected===id)update(latest.current);
    }
   };
-  const pointerCancel=()=>{pointers=0;multitouch=false};
-  renderer.domElement.addEventListener('pointerdown',pointerDown);renderer.domElement.addEventListener('pointerup',pointerUp);renderer.domElement.addEventListener('pointercancel',pointerCancel);
+  const pointerCancel=()=>{gesture.cancel()};
+  renderer.domElement.addEventListener('pointermove',pointerMove);renderer.domElement.addEventListener('lostpointercapture',pointerCancel);renderer.domElement.addEventListener('pointerdown',pointerDown);renderer.domElement.addEventListener('pointerup',pointerUp);renderer.domElement.addEventListener('pointercancel',pointerCancel);
   const directions:Record<string,V>={perspective:[-1,.52,1.25],left:[0,.08,1],front:[-1,.06,0],rear:[1,.08,0],top:[0,1,.001]};
   type V=[number,number,number];
   function fit(p:Props,focusPiece=p.isolated){
@@ -92,10 +94,10 @@ export default function TruckView(props:Props){
    lastSelected=p.selected;lastView=p.view;lastReset=p.reset;lastIsolated=p.isolated;lastStep=p.instanceStep;lastExploded=p.exploded;dirty=15;
   }
   api.current={update};
-  const resize=()=>{const w=el.clientWidth,h=el.clientHeight;if(!w||!h)return;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();fit(latest.current);dirty=10;};
+  const resize=()=>{const w=el.clientWidth,h=el.clientHeight;if(!w||!h)return;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();dirty=10;};
   const observer=new ResizeObserver(resize);observer.observe(el);resize();update(latest.current);
   controls.addEventListener('change',()=>{dirty=5});let frame=0;
-  function animate(){frame=requestAnimationFrame(animate);controls.update();if(dirty>0){renderer.render(scene,camera);dirty--;}}animate();
+  function animate(){frame=requestAnimationFrame(animate);const distance=camera.position.distanceTo(controls.target);controls.rotateSpeed=T.MathUtils.lerp(.24,.55,T.MathUtils.smoothstep(distance,.4,12));const near=Math.max(.001,Math.min(.05,distance/1000));if(Math.abs(camera.near-near)>.0001){camera.near=near;camera.updateProjectionMatrix();}controls.update();if(dirty>0){renderer.render(scene,camera);dirty--;}}animate();
   loadReferenceRevision(loader,percent=>{
    if(!disposed)setLoadProgress(Math.min(99,percent));
   }).then(cad=>{
@@ -110,7 +112,7 @@ export default function TruckView(props:Props){
    if(!disposed){setLoading(false);setError(true);}
   }).finally(()=>{draco.dispose();});
   const lost=(e:Event)=>{e.preventDefault();setError(true)};renderer.domElement.addEventListener('webglcontextlost',lost);
-  return()=>{disposed=true;draco.dispose();api.current=null;cancelAnimationFrame(frame);observer.disconnect();controls.dispose();renderer.domElement.removeEventListener('pointerdown',pointerDown);renderer.domElement.removeEventListener('pointerup',pointerUp);renderer.domElement.removeEventListener('pointercancel',pointerCancel);renderer.domElement.removeEventListener('webglcontextlost',lost);const mats=new Set<T.Material>(),textures=new Set<T.Texture>();scene.traverse(o=>{if(o instanceof T.Mesh){o.geometry.dispose();for(const m of Array.isArray(o.material)?o.material:[o.material])mats.add(m);}});mats.forEach(m=>{for(const value of Object.values(m))if(value instanceof T.Texture)textures.add(value);m.dispose()});textures.forEach(t=>t.dispose());environment.dispose();renderer.dispose();renderer.domElement.remove();};
+  return()=>{disposed=true;draco.dispose();api.current=null;cancelAnimationFrame(frame);observer.disconnect();controls.dispose();renderer.domElement.removeEventListener('pointermove',pointerMove);renderer.domElement.removeEventListener('lostpointercapture',pointerCancel);renderer.domElement.removeEventListener('pointerdown',pointerDown);renderer.domElement.removeEventListener('pointerup',pointerUp);renderer.domElement.removeEventListener('pointercancel',pointerCancel);renderer.domElement.removeEventListener('webglcontextlost',lost);const mats=new Set<T.Material>(),textures=new Set<T.Texture>();scene.traverse(o=>{if(o instanceof T.Mesh){o.geometry.dispose();for(const m of Array.isArray(o.material)?o.material:[o.material])mats.add(m);}});mats.forEach(m=>{for(const value of Object.values(m))if(value instanceof T.Texture)textures.add(value);m.dispose()});textures.forEach(t=>t.dispose());environment.dispose();renderer.dispose();renderer.domElement.remove();};
  },[]);
  useEffect(()=>{api.current?.update(props)},[props.selected,props.zone,props.xray,props.exploded,props.isolated,props.view,props.reset,props.instanceStep,props.zoom,props.focus]);
  return <div ref={host} className="three-host">{loading&&!error&&<div className="cad-loading" role="status"><span className="cad-spinner"/><strong>Cargando el ensamblaje CAD</strong><span>{loadProgress<99?`${loadProgress}% · Preparando piezas y materiales`:'Preparando la vista 3D…'}</span></div>}{error&&<div className="viewer-error"><strong>No se pudo cargar el modelo CAD.</strong><p>Puedes estudiar las piezas con la lista. Recarga la página para volver a intentar.</p></div>}</div>;

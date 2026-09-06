@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {PointerGesture} from '../app/pointer-gesture.ts';
+const g=new PointerGesture();
+g.down(1,10,10);assert.equal(g.up(1,13,12),true,'Small finger jitter remains a tap');
+g.down(1,10,10);g.move(1,60,10);assert.equal(g.up(1,10,10),false,'Return-to-origin drag cannot pick a part');
+g.down(1,0,0);g.down(2,30,0);assert.equal(g.up(2,30,0),false);assert.equal(g.up(1,0,0),false,'Pinch release cannot pick a part');
+g.down(1,0,0);g.cancel();assert.equal(g.up(1,0,0),false,'Cancelled input cannot pick a part');
+g.down(2,0,0);assert.equal(g.up(2,0,0),true,'A new tap works after cancellation');
+g.down(1,0,0);g.move(1,50,0);g.down(2,50,20);g.up(1,50,0);assert.equal(g.up(2,50,20),false,'One-to-two-to-one finger transition is not a tap');
+assert.equal(g.up(99,0,0),false,'Untracked pointers are ignored');
+console.log('Gesture checks passed: tap, jitter, drag return, pinch, cancellation, pointer transitions.');
