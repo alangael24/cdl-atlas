@@ -10,6 +10,7 @@ import {loadReferenceRevision} from './reference-revision';
 import {frameBounds,zoomCamera} from './model-camera';
 import {parts} from './data';
 import {PointerGesture} from './pointer-gesture';
+import {configureTouchControls} from './touch-controls';
 type Props={selected:string;zone:string;xray:boolean;exploded:boolean;isolated:boolean;view:string;reset:number;zoom:number;focus:number;instanceStep:number;engineHome:number;onInstance:(label:string,index:number,count:number)=>void;onSelect:(id:string)=>void};
 export default function TruckView(props:Props){
  const host=useRef<HTMLDivElement>(null),api=useRef<{update:(p:Props)=>void}|null>(null),latest=useRef(props);
@@ -20,10 +21,10 @@ export default function TruckView(props:Props){
   setError(false);setLoading(true);setLoadProgress(0);
   try{renderer=new T.WebGLRenderer({antialias:true,alpha:true});}catch{setError(true);return;}
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFShadowMap;renderer.setClearColor('#e8ebeb',0);renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
-  el.appendChild(renderer.domElement);renderer.domElement.setAttribute('aria-label','Camión y componentes 3D detallados. Arrastra para girar. Usa la lista para seleccionar piezas con teclado.');
+  el.appendChild(renderer.domElement);renderer.domElement.setAttribute('aria-label','Camión y componentes 3D detallados. Un dedo mueve el camión; dos dedos giran y pellizcan para acercar. Usa la lista para seleccionar piezas con teclado.');
   const scene=new T.Scene(),camera=new T.PerspectiveCamera(36,1,.005,200);
   const studio=new RoomEnvironment(),pmrem=new T.PMREMGenerator(renderer),environment=pmrem.fromScene(studio,.035);scene.environment=environment.texture;scene.environmentIntensity=.9;studio.dispose();pmrem.dispose();
-  const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.22;controls.enableZoom=true;controls.zoomToCursor=false;controls.zoomSpeed=.6;controls.rotateSpeed=.32;controls.panSpeed=.45;controls.touches.ONE=T.TOUCH.ROTATE;controls.touches.TWO=T.TOUCH.DOLLY_PAN;controls.screenSpacePanning=true;controls.minDistance=.015;controls.maxDistance=65;controls.maxPolarAngle=Math.PI*.95;
+  const controls=new OrbitControls(camera,renderer.domElement);configureTouchControls(controls);controls.enableZoom=true;controls.zoomToCursor=false;controls.zoomSpeed=.6;controls.rotateSpeed=.32;controls.minDistance=.015;controls.maxDistance=65;controls.maxPolarAngle=Math.PI*.95;
   scene.add(new T.HemisphereLight('#e8efff','#77736b',.75));
   const sun=new T.DirectionalLight('#fff8ef',2.5);sun.position.set(-9,16,10);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-23,right:23,top:23,bottom:-23,near:.1,far:65});sun.shadow.bias=-.0002;sun.shadow.normalBias=.012;scene.add(sun);
   const fill=new T.DirectionalLight('#e5eeff',1.5);fill.position.set(9,7,-12);scene.add(fill);
@@ -58,8 +59,7 @@ export default function TruckView(props:Props){
    const bounds=new T.Box3().setFromObject(object);
    const direction=new T.Vector3(...(directions[p.view]||directions.perspective)).normalize();
    if(focusPiece&&p.view==='perspective')direction.set(-.8,.45,1.4).normalize();
-   // Drain leftover drag inertia before recentering, so it cannot pull the new view away.
-   controls.enableDamping=false;controls.update();controls.enableDamping=true;
+   controls.update();
    const {center,distance}=frameBounds(camera,bounds,direction,focusPiece?1.7:1.2);
    controls.target.copy(center);controls.maxDistance=Math.max(15,distance*2);controls.minDistance=.015;controls.update();
   }
