@@ -1,0 +1,508 @@
+{
+  "source": "CAD OpenCascade / STEP assembly",
+  "sourceSolids": 9449,
+  "originalTriangles": 11619040,
+  "webTriangles": 1900896,
+  "bytes": 8460084,
+  "groups": [
+    {
+      "id": "frame",
+      "instances": [
+        "Largueros_del_tractor",
+        "Eje_1",
+        "Eje_2",
+        "Eje_3",
+        "Eje_4",
+        "Eje_5",
+        "rbol_de_transmisi_n",
+        "Largueros_del_remolque",
+        "Defensa_y_guardafangos"
+      ]
+    },
+    {
+      "id": "tire",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo_exterior",
+        "Eje_motriz_1_lado_izquierdo_interior",
+        "Eje_motriz_1_lado_derecho_exterior",
+        "Eje_motriz_1_lado_derecho_interior",
+        "Eje_motriz_2_lado_izquierdo_exterior",
+        "Eje_motriz_2_lado_izquierdo_interior",
+        "Eje_motriz_2_lado_derecho_exterior",
+        "Eje_motriz_2_lado_derecho_interior",
+        "Eje_de_remolque_1_lado_izquierdo_exterior",
+        "Eje_de_remolque_1_lado_izquierdo_interior",
+        "Eje_de_remolque_1_lado_derecho_exterior",
+        "Eje_de_remolque_1_lado_derecho_interior",
+        "Eje_de_remolque_2_lado_izquierdo_exterior",
+        "Eje_de_remolque_2_lado_izquierdo_interior",
+        "Eje_de_remolque_2_lado_derecho_exterior",
+        "Eje_de_remolque_2_lado_derecho_interior"
+      ]
+    },
+    {
+      "id": "rim",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo_exterior",
+        "Eje_motriz_1_lado_izquierdo_interior",
+        "Eje_motriz_1_lado_derecho_exterior",
+        "Eje_motriz_1_lado_derecho_interior",
+        "Eje_motriz_2_lado_izquierdo_exterior",
+        "Eje_motriz_2_lado_izquierdo_interior",
+        "Eje_motriz_2_lado_derecho_exterior",
+        "Eje_motriz_2_lado_derecho_interior",
+        "Eje_de_remolque_1_lado_izquierdo_exterior",
+        "Eje_de_remolque_1_lado_izquierdo_interior",
+        "Eje_de_remolque_1_lado_derecho_exterior",
+        "Eje_de_remolque_1_lado_derecho_interior",
+        "Eje_de_remolque_2_lado_izquierdo_exterior",
+        "Eje_de_remolque_2_lado_izquierdo_interior",
+        "Eje_de_remolque_2_lado_derecho_exterior",
+        "Eje_de_remolque_2_lado_derecho_interior"
+      ]
+    },
+    {
+      "id": "hub",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo_exterior",
+        "Eje_motriz_1_lado_izquierdo_interior",
+        "Eje_motriz_1_lado_derecho_exterior",
+        "Eje_motriz_1_lado_derecho_interior",
+        "Eje_motriz_2_lado_izquierdo_exterior",
+        "Eje_motriz_2_lado_izquierdo_interior",
+        "Eje_motriz_2_lado_derecho_exterior",
+        "Eje_motriz_2_lado_derecho_interior",
+        "Eje_de_remolque_1_lado_izquierdo_exterior",
+        "Eje_de_remolque_1_lado_izquierdo_interior",
+        "Eje_de_remolque_1_lado_derecho_exterior",
+        "Eje_de_remolque_1_lado_derecho_interior",
+        "Eje_de_remolque_2_lado_izquierdo_exterior",
+        "Eje_de_remolque_2_lado_izquierdo_interior",
+        "Eje_de_remolque_2_lado_derecho_exterior",
+        "Eje_de_remolque_2_lado_derecho_interior"
+      ]
+    },
+    {
+      "id": "spring",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho"
+      ]
+    },
+    {
+      "id": "shock",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "chamber",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "slack",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "drum",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "brakehose",
+      "instances": [
+        "Eje_de_direcci_n_lado_izquierdo",
+        "Eje_de_direcci_n_lado_derecho",
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "airbags",
+      "instances": [
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "torquerod",
+      "instances": [
+        "Eje_motriz_1_lado_izquierdo",
+        "Eje_motriz_1_lado_derecho",
+        "Eje_motriz_2_lado_izquierdo",
+        "Eje_motriz_2_lado_derecho",
+        "Eje_de_remolque_1_lado_izquierdo",
+        "Eje_de_remolque_1_lado_derecho",
+        "Eje_de_remolque_2_lado_izquierdo",
+        "Eje_de_remolque_2_lado_derecho"
+      ]
+    },
+    {
+      "id": "engine",
+      "instances": [
+        "DD15_bloque_y_culata",
+        "Radiador"
+      ]
+    },
+    {
+      "id": "oil",
+      "instances": [
+        "Varilla_y_tubo_de_llenado"
+      ]
+    },
+    {
+      "id": "coolant",
+      "instances": [
+        "Dep_sito_de_expansi_n"
+      ]
+    },
+    {
+      "id": "alternator",
+      "instances": [
+        "Alternador"
+      ]
+    },
+    {
+      "id": "belts",
+      "instances": [
+        "Correa_y_poleas"
+      ]
+    },
+    {
+      "id": "steering",
+      "instances": [
+        "Caja_de_direcci_n"
+      ]
+    },
+    {
+      "id": "pitman",
+      "instances": [
+        "Brazo_Pitman"
+      ]
+    },
+    {
+      "id": "draglink",
+      "instances": [
+        "Barra_de_arrastre"
+      ]
+    },
+    {
+      "id": "tierod",
+      "instances": [
+        "Barra_transversal"
+      ]
+    },
+    {
+      "id": "steeringshaft",
+      "instances": [
+        "Eje_y_juntas_universales"
+      ]
+    },
+    {
+      "id": "steeringhoses",
+      "instances": [
+        "L_neas_hidr_ulicas"
+      ]
+    },
+    {
+      "id": "knuckle",
+      "instances": [
+        "Mangueta_derecha",
+        "Mangueta_izquierda"
+      ]
+    },
+    {
+      "id": "spindle",
+      "instances": [
+        "Espiga_derecha",
+        "Espiga_izquierda"
+      ]
+    },
+    {
+      "id": "steeringarm",
+      "instances": [
+        "Brazo_de_direcci_n_derecho",
+        "Brazo_de_direcci_n_izquierdo"
+      ]
+    },
+    {
+      "id": "fuel",
+      "instances": [
+        "Tanque_izquierdo",
+        "Tanque_derecho"
+      ]
+    },
+    {
+      "id": "battery",
+      "instances": [
+        "Banco_de_bater_as"
+      ]
+    },
+    {
+      "id": "exhaust",
+      "instances": [
+        "Tratamiento_de_gases_y_escape"
+      ]
+    },
+    {
+      "id": "fifth",
+      "instances": [
+        "Quinta_rueda"
+      ]
+    },
+    {
+      "id": "kingpin",
+      "instances": [
+        "Perno_rey_mordaza_y_palanca"
+      ]
+    },
+    {
+      "id": "connections",
+      "instances": [
+        "L_nea_de_suministro",
+        "L_nea_de_servicio",
+        "Conector_el_ctrico"
+      ]
+    },
+    {
+      "id": "landing",
+      "instances": [
+        "Pata_izquierda",
+        "Pata_derecha",
+        "Manivela_y_eje"
+      ]
+    },
+    {
+      "id": "trailerbody",
+      "instances": [
+        "Carrocer_a_del_semirremolque"
+      ]
+    },
+    {
+      "id": "reflectors",
+      "instances": [
+        "Luces_y_cinta_del_lateral_izquierdo",
+        "Luces_y_cinta_del_lateral_derecho",
+        "Luces_posteriores"
+      ]
+    },
+    {
+      "id": "doors",
+      "instances": [
+        "Puerta_trasera_izquierda",
+        "Puerta_trasera_derecha"
+      ]
+    },
+    {
+      "id": "body",
+      "instances": [
+        "Cabina"
+      ]
+    },
+    {
+      "id": "mirrors",
+      "instances": [
+        "Ventana_y_espejo_izquierdo",
+        "Ventana_y_espejo_derecho",
+        "Parabrisas"
+      ]
+    },
+    {
+      "id": "hood",
+      "instances": [
+        "Cap"
+      ]
+    },
+    {
+      "id": "lights",
+      "instances": [
+        "Faro_izquierdo",
+        "Faro_derecho",
+        "Luces_de_g_libo"
+      ]
+    },
+    {
+      "id": "safety",
+      "instances": [
+        "Extintor"
+      ]
+    },
+    {
+      "id": "steeringpump",
+      "instances": [
+        "Bomba_y_engranaje_de_direcci_n"
+      ]
+    },
+    {
+      "id": "shackle",
+      "instances": [
+        "Gemela_derecha",
+        "Gemela_izquierda"
+      ]
+    },
+    {
+      "id": "powerreservoir",
+      "instances": [
+        "Dep_sito_de_direcci_n"
+      ]
+    },
+    {
+      "id": "waterpump",
+      "instances": [
+        "Bomba_de_agua"
+      ]
+    },
+    {
+      "id": "compressor",
+      "instances": [
+        "Compresor_de_aire_accionamiento_por_engranajes"
+      ]
+    },
+    {
+      "id": "def",
+      "instances": [
+        "Tanque_DEF_y_tap_n_azul"
+      ]
+    },
+    {
+      "id": "triangles",
+      "instances": [
+        "Tri_ngulos_reflectantes"
+      ]
+    },
+    {
+      "id": "fuses",
+      "instances": [
+        "Panel_de_fusibles_ejemplo"
+      ]
+    },
+    {
+      "id": "washer",
+      "instances": [
+        "Dep_sito_lavaparabrisas"
+      ]
+    },
+    {
+      "id": "climate",
+      "instances": [
+        "Mandos_de_calefacci_n_y_desempa_ado"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "instances": [
+        "Tablero_y_controles_de_freno_ejemplo"
+      ]
+    },
+    {
+      "id": "horn",
+      "instances": [
+        "Bocina_y_volante"
+      ]
+    },
+    {
+      "id": "slidepins",
+      "instances": [
+        "Bloqueo_de_quinta_rueda_deslizante"
+      ]
+    },
+    {
+      "id": "safetylatch",
+      "instances": [
+        "Seguro_de_la_palanca"
+      ]
+    },
+    {
+      "id": "reartape",
+      "instances": [
+        "Cinta_reflectante_trasera"
+      ]
+    },
+    {
+      "id": "sidereflectors",
+      "instances": [
+        "Reflectores_del_tractor"
+      ]
+    }
+  ],
+  "units": "metres",
+  "asset": "/cad/cascadia-dd15-v2.glb",
+  "finishes": [
+    "paint",
+    "white",
+    "chrome",
+    "steel",
+    "cast",
+    "rubber",
+    "red",
+    "brass",
+    "copper",
+    "glass",
+    "amber",
+    "redlens",
+    "lens",
+    "plastic",
+    "fluid",
+    "blue"
+  ],
+  "engineeringStatus": "Reference reconstruction. Component dimensions and installation are not OEM-verified. Overlapping detail bodies are retained as separate assembly solids."
+}
